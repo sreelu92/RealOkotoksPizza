@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  display: -ms-grid;
+  display: grid;
+  row-gap: 4vh;
+}
+
+#container #header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  width: 100%;
+  height: 20vh;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTaqkheI1eHco59pIjVVJ_ScUJ08H9L6hf4-w&usqp=CAU);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#container #header h3 {
+  font-size: larger;
+  text-align: center;
+  position: relative;
+}
+
+#container #header h3 #pizza-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#container #header a {
+  color: black;
+  font-weight: bolder;
+  font-size: smaller;
+  -webkit-transition: font-size 0.25s ease-in-out;
+  transition: font-size 0.25s ease-in-out;
+}
+
+#container #header:hover {
+  font-size: large;
+}
+
+#container #header:visited {
+  color: darkblue;
+}
+
+#container #content {
+  width: 100%;
+  min-height: 65vh;
+  display: -ms-grid;
+  display: grid;
+  row-gap: 2vw;
+}
+
+#container #content #content-one {
+  width: 95vw;
+  height: 20vh;
+  background-color: black;
+  position: relative;
+  left: 2vw;
+}
+
+#container #content #content-one img {
+  width: 50%;
+  height: 20vh;
+}
+
+#container #content #content-one #ptag-one {
+  position: absolute;
+  font-weight: bolder;
+  top: 7vh;
+  left: 50vw;
+  font-style: italic;
+  color: white;
+}
+
+#container #content #content-one #ptag-two {
+  position: absolute;
+  font-style: italic;
+  font-size: smaller;
+  font-weight: bolder;
+  top: 21vh;
+  left: 50vw;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+#container #content #content-one #ptag-two #atagone-content {
+  color: goldenrod;
+}
+
+#container #content #content-one #contentimage-one {
+  width: 100%;
+  height: 20vh;
+}
+
+#container #content #content-one #ptag-three {
+  position: absolute;
+  top: 54vh;
+  color: white;
+  left: 55vw;
+}
+
+#container #content #content-one #ptag-three #atagtwo-content {
+  color: goldenrod;
+  position: absolute;
+  left: 10vw;
+  font-style: italic;
+}
+
+#container #footer {
+  width: 100%;
+  min-height: 15vh;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTaqkheI1eHco59pIjVVJ_ScUJ08H9L6hf4-w&usqp=CAU);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+/*# sourceMappingURL=style.css.map */
