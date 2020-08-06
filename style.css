@@ -6,7 +6,9 @@
 #container {
   display: -ms-grid;
   display: grid;
-  row-gap: 4vh;
+  row-gap: 2vh;
+  margin-left: 1%;
+  width: 98%;
 }
 
 #container #header {
@@ -40,12 +42,12 @@
   transition: font-size 0.25s ease-in-out;
 }
 
-#container #header:hover {
-  font-size: large;
+#container #header a:link {
+  color: black;
 }
 
-#container #header:visited {
-  color: darkblue;
+#container #header a:visited {
+  color: blue;
 }
 
 #container #content {
@@ -53,7 +55,7 @@
   min-height: 65vh;
   display: -ms-grid;
   display: grid;
-  row-gap: 2vw;
+  row-gap: 1vw;
 }
 
 #container #content #content-one {
@@ -115,11 +117,88 @@
 
 #container #footer {
   width: 100%;
-  min-height: 15vh;
+  min-height: 10vh;
   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTaqkheI1eHco59pIjVVJ_ScUJ08H9L6hf4-w&usqp=CAU);
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+@media only screen and (min-width: 768px) {
+  #container #header {
+    height: 15vh;
+  }
+  #container #header h3 {
+    font-size: xx-large;
+  }
+  #container #header h3 #pizza-logo {
+    top: 4vh;
+    width: 20%;
+  }
+  #container #content {
+    min-height: 75vh;
+  }
+  #container #content #content-one {
+    position: relative;
+    margin-top: 1%;
+  }
+  #container #content #content-one #ptag-one {
+    font-size: 1.4em;
+  }
+  #container #content #content-one iframe {
+    height: 25vh;
+  }
+  #container #content #content-one #contentimage-one {
+    height: 28vh;
+  }
+  #container #content #content-one #ptag-three {
+    position: absolute;
+    left: 65vw;
+    top: 55vh;
+    font-size: x-large;
+  }
+  #container #content #content-one #ptag-three #atagtwo-content {
+    position: absolute;
+    left: 3vw;
+    top: 5vh;
+    font-size: larger;
+  }
+  #container #footer {
+    min-height: 5vh;
+    position: relative;
+  }
+  #container #footer #footerh5-one {
+    position: absolute;
+    top: 2vh;
+  }
+  #container #footer #footerdiv-one {
+    position: absolute;
+    top: 2vh;
+    left: 40vw;
+  }
+  #container #footer #footerh5-two {
+    position: absolute;
+    top: 2vh;
+    left: 70vw;
+  }
+}
+
+@media only screen and (min-width: 1020px) {
+  #container #header {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+    width: 100%;
+    position: relative;
+  }
+  #container h3 {
+    position: absolute;
+    left: 2vw;
+  }
+  #container h3 #pizza-logo {
+    position: absolute;
+  }
 }
 /*# sourceMappingURL=style.css.map */
