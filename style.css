@@ -7,8 +7,6 @@
   display: -ms-grid;
   display: grid;
   row-gap: 2vh;
-  margin-left: 1%;
-  width: 98%;
 }
 
 #container #header {
@@ -34,24 +32,21 @@
   left: 0;
 }
 
+#container #header #pizza-logo-two {
+  display: none;
+}
+
 #container #header a {
   color: black;
   font-weight: bolder;
   font-size: smaller;
   -webkit-transition: font-size 0.25s ease-in-out;
   transition: font-size 0.25s ease-in-out;
-}
-
-#container #header a:link {
-  color: black;
-}
-
-#container #header a:visited {
-  color: blue;
+  text-decoration: none;
 }
 
 #container #content {
-  width: 100%;
+  width: 99%;
   min-height: 65vh;
   display: -ms-grid;
   display: grid;
@@ -59,11 +54,11 @@
 }
 
 #container #content #content-one {
-  width: 95vw;
+  width: 99%;
   height: 20vh;
   background-color: black;
   position: relative;
-  left: 2vw;
+  margin-left: 1vw;
 }
 
 #container #content #content-one img {
@@ -78,6 +73,10 @@
   left: 50vw;
   font-style: italic;
   color: white;
+}
+
+#container #content #content-one #ptagone-one {
+  display: none;
 }
 
 #container #content #content-one #ptag-two {
@@ -115,9 +114,13 @@
   font-style: italic;
 }
 
+#container #content #content-two {
+  display: none;
+}
+
 #container #footer {
   width: 100%;
-  min-height: 10vh;
+  min-height: 12vh;
   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTaqkheI1eHco59pIjVVJ_ScUJ08H9L6hf4-w&usqp=CAU);
   display: -ms-grid;
   display: grid;
@@ -127,6 +130,14 @@
 
 @media only screen and (min-width: 768px) {
   #container #header {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(150px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 15vh;
   }
   #container #header h3 {
@@ -135,6 +146,12 @@
   #container #header h3 #pizza-logo {
     top: 4vh;
     width: 20%;
+    position: absolute;
+    top: 7vh;
+    left: 5vw;
+  }
+  #container #header #pizza-logo-two {
+    display: none;
   }
   #container #content {
     min-height: 75vh;
@@ -145,6 +162,9 @@
   }
   #container #content #content-one #ptag-one {
     font-size: 1.4em;
+  }
+  #container #content #content-one #ptagone-one {
+    display: none;
   }
   #container #content #content-one iframe {
     height: 25vh;
@@ -164,8 +184,11 @@
     top: 5vh;
     font-size: larger;
   }
+  #container #content #content-two {
+    display: none;
+  }
   #container #footer {
-    min-height: 5vh;
+    min-height: 8vh;
     position: relative;
   }
   #container #footer #footerh5-one {
@@ -186,19 +209,180 @@
 
 @media only screen and (min-width: 1020px) {
   #container #header {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     justify-items: center;
     width: 100%;
+  }
+  #container #header h3 {
+    display: none;
+  }
+  #container #header h3 #pizza-logo {
+    position: absolute;
+    left: 0;
+    top: 4vh;
+  }
+  #container #header #pizza-logo-two {
+    display: block;
+    width: 30%;
+  }
+  #container #header a {
+    font-size: large;
+    color: white;
+    text-decoration: none;
+    background-color: darkred;
+    padding: 1vh;
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+  }
+  #container #header a:hover {
+    background-color: crimson;
+  }
+  #container #content {
+    -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    width: 99%;
+  }
+  #container #content #content-one {
+    display: none;
+  }
+  #container #content #content-two {
+    min-height: 170vh;
+    display: block;
     position: relative;
   }
-  #container h3 {
+  #container #content #content-two h1 {
     position: absolute;
-    left: 2vw;
+    top: 15vh;
+    left: 10vw;
+    color: #333;
+    font-family: "adobe-caslon-pro",serif;
+    font-style: normal;
+    font-size: 3em;
   }
-  #container h3 #pizza-logo {
+  #container #content #content-two h4 {
     position: absolute;
+    top: 26vh;
+    left: 14vw;
+    color: #333;
+    font-family: "adobe-caslon-pro",serif;
+    font-size: 1em;
+    font-style: italic;
+  }
+  #container #content #content-two .condenttwoimages {
+    position: absolute;
+    border: 5px solid black;
+    width: 275px;
+    height: 183px;
+  }
+  #container #content #content-two #contenttwo-imageone {
+    left: 44vw;
+    top: 8vh;
+  }
+  #container #content #content-two #contenttwo-imagetwo {
+    left: 69vw;
+    top: 8vh;
+  }
+  #container #content #content-two #contenttwo-imagethree {
+    left: 44vw;
+    top: 38vh;
+  }
+  #container #content #content-two #contenttwo-imagefour {
+    left: 69vw;
+    top: 38vh;
+  }
+  #container #content #content-two #hrtag-one {
+    border-color: #8c6349;
+    position: absolute;
+    top: 40vh;
+    left: 3vw;
+    width: 37%;
+  }
+  #container #content #content-two #hrtag-two {
+    border-color: #8c6349;
+    position: absolute;
+    top: 65vh;
+    left: 3vw;
+    width: 37%;
+  }
+  #container #content #content-two #contenttwo-ptagone {
+    position: absolute;
+    top: 47vh;
+    left: 3vw;
+    font-size: large;
+    color: #8c6349;
+    text-align: center;
+    font-weight: bold;
+  }
+  #container #content #content-two #contenttwo-two {
+    width: 100%;
+    top: 80vh;
+    height: 36vh;
+    left: 0.25vw;
+    position: absolute;
+  }
+  #container #content #content-two #contenttwo-two #contenttwo-imagefive {
+    position: absolute;
+    top: 0;
+    height: 35vh;
+    width: 40%;
+    border: 5px double black;
+  }
+  #container #content #content-two #contenttwo-two #contenttwo-h3tagone {
+    color: #333;
+    position: absolute;
+    left: 47%;
+    font-style: oblique;
+    font-weight: bolder;
+    top: 15vh;
+  }
+  #container #content #content-two #contenttwo-two #contenttwo-h3tagone #contenttwo-atagone {
+    color: goldenrod;
+  }
+  #container #content #content-two #contenttwo-two #contenttwo-imagesix {
+    position: absolute;
+    top: 43vh;
+    height: 35vh;
+    width: 40%;
+    border: 5px double black;
+    left: 55%;
+  }
+  #container #content #content-two #contenttwo-two #contenttwo-h3tagtwo {
+    position: absolute;
+    left: 5vw;
+    top: 60vh;
+    color: #333;
+    font-style: oblique;
+    font-weight: bolder;
+  }
+  #container #content #content-two #contenttwo-two #contenttwo-h3tagtwo #contenttwo-atagone {
+    position: absolute;
+    left: 7vw;
+    color: white;
+    background-color: darkred;
+    padding: 3vh;
+    text-decoration: none;
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+  }
+  #container #content #content-two #contenttwo-two #contenttwo-h3tagtwo #contenttwo-atagone:hover {
+    background-color: crimson;
+  }
+  #container #footer {
+    position: relative;
+  }
+  #container #footer #footerh5-one {
+    position: absolute;
+    left: 1vw;
+  }
+  #container #footer #footerh5-two {
+    position: absolute;
+    left: 80vw;
   }
 }
 /*# sourceMappingURL=style.css.map */

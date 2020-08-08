@@ -5,14 +5,13 @@
 #container {
     display:grid;
     row-gap: 2vh;
-    margin-left: 1%;
-    width:98%;
-    
-    #header {
+  
+   #header {
         display: grid;
         grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
         width: 100%;
         height:20vh;
+        
         background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTaqkheI1eHco59pIjVVJ_ScUJ08H9L6hf4-w&usqp=CAU);
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
@@ -28,25 +27,24 @@
             }
             
         }
+        #pizza-logo-two {
+            display: none;
+        }
         a{
             color: black;
             font-weight: bolder;
             font-size:smaller;
             transition: font-size 0.25s ease-in-out;
+            text-decoration: none;
             
-            &:link {
-                color: black;
-            }
-            &:visited {
-                color:blue;
-            }
+            
 
            
         }
         
     }
     #content {
-        width: 100%;
+        width: 99%;
         
         min-height: 65vh;
       
@@ -54,11 +52,12 @@
         row-gap:1vw ;
       
         #content-one {
-            width: 95vw;
+            width: 99%;
             height: 20vh;
             background-color: black;
             position: relative;
-            left: 2vw;
+            margin-left: 1vw;
+            
             img {
                 width:50%;
                 height:20vh;
@@ -73,6 +72,9 @@
                 color: white;
                
 
+            }
+            #ptagone-one {
+                display: none;
             }
             #ptag-two {
                 position: absolute;
@@ -111,13 +113,16 @@
             
 
         }
+        #content-two {
+            display: none;
+        }
         
        
         
     }
     #footer {
         width:100%;
-        min-height: 10vh;
+        min-height: 12vh;
         background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTaqkheI1eHco59pIjVVJ_ScUJ08H9L6hf4-w&usqp=CAU);
         display: grid;
         grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
@@ -129,6 +134,10 @@
         
             
             #header {
+                display: grid;
+                grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+                justify-items: center;
+                align-items: center;
                 height: 15vh;
                 h3 {
                 
@@ -136,8 +145,15 @@
                     #pizza-logo {
                         top:4vh;
                         width: 20%;
+                        position: absolute;
+                        top: 7vh;
+                        left: 5vw;
                     }
+                    
 
+                }
+                #pizza-logo-two {
+                    display: none;
                 }
            
             }
@@ -150,6 +166,9 @@
                   #ptag-one
                   {
                       font-size: 1.4em;
+                  }
+                  #ptagone-one {
+                      display: none;
                   }
 
                     iframe {
@@ -173,10 +192,14 @@
                         }
                     }
                 }
+                #content-two {
+                    display: none;
+                }
+                
                 
             }
             #footer {
-                min-height: 5vh;
+                min-height:8vh;
                 position: relative;
                 
                 #footerh5-one {
@@ -202,28 +225,219 @@
                 }
             }
         
-       
-            
-        
-        
-    
     }
     @media only screen  and(min-width:1020px){
        
             
             #header {
+                display: grid;
+                grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
                 align-items: center;
                 justify-items: center;
                 width: 100%;
-                position: relative;
-            }
-            h3 {
-                position: absolute;
-                left: 2vw;
-                #pizza-logo {
-                    position: absolute;
-                  
+              
+                h3 {
+                    display: none;
+                    
+                    
+                     #pizza-logo {
+                     position: absolute;
+                       left:0;
+                       top:4vh;
+                         
+                     }
+                     
                 }
+                #pizza-logo-two {
+                    display: block;
+                    width:30%;
+                }
+                a {
+                    font-size: large;
+                    color: white;
+                    text-decoration: none;
+                    background-color: darkred;
+                    padding: 1vh;
+                    transition: all 0.25s ease-in-out;
+                    &:hover {
+                        background-color: crimson;
+                    }
+                }
+              
+            }
+            
+            
+            #content {
+               
+                grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+                width: 99%;
+               
+                #content-one {
+                    display: none;
+
+
+                }
+                #content-two {
+                    min-height: 170vh;
+
+                    display: block;
+                    position: relative;
+                    h1 {
+                        position: absolute;
+                        top:15vh;
+                        left:10vw;
+                        color: #333;
+                        font-family:"adobe-caslon-pro",serif;
+                        font-style: normal;
+                        font-size: 3em;
+
+                    }
+                    h4 {
+                        position:absolute;
+                        top:26vh ;
+                        left: 14vw;
+                        color: #333;
+                        font-family:"adobe-caslon-pro",serif;
+                        font-size: 1em;
+                        font-style: italic;
+
+
+                    }
+                    .condenttwoimages{
+                        position: absolute;
+                        border: 5px solid black;
+                        width: 275px;
+                        height: 183px;
+
+                    }
+                    #contenttwo-imageone {
+                       
+                        left: 44vw;
+                        top:8vh;
+
+                    }
+                    #contenttwo-imagetwo{
+                        
+                        left: 69vw;
+                        top:8vh;
+                       
+
+                    }
+                    #contenttwo-imagethree{
+                      
+                        left: 44vw;
+                        top:38vh;
+                        
+
+                    }
+                    #contenttwo-imagefour{
+                        
+                        left: 69vw;
+                        top:38vh;
+                        
+
+                    }
+                    #hrtag-one {
+                        border-color: #8c6349;
+                        position: absolute;
+                        top: 40vh;
+                        left:3vw;
+                        width:37%;
+                    }
+                    #hrtag-two {
+                        border-color: #8c6349;
+                        position: absolute;
+                        top: 65vh;
+                        left:3vw;
+                        width:37%;
+                    }
+                    #contenttwo-ptagone {
+                        position: absolute;
+                        top: 47vh;
+                        left: 3vw;
+                        font-size: large;
+                        color:#8c6349 ;
+                        text-align: center;
+                        font-weight: bold;
+                        
+                    }
+                    #contenttwo-two {
+                        width: 100%;
+                        top:80vh;
+                        height: 36vh;
+                        left: 0.25vw;
+                      
+                        position: absolute;
+                        #contenttwo-imagefive {
+                            position: absolute;
+                            top: 0;
+                            height: 35vh;
+                            width: 40%;
+                            border: 5px double black;
+
+                            
+                        }
+                        #contenttwo-h3tagone{
+                            color: #333; 
+                            position: absolute;
+                            left:47%;
+                            font-style: oblique;
+                            font-weight: bolder;
+                            top:15vh;
+                            #contenttwo-atagone {
+                                color: goldenrod;
+                            }
+                        }
+                        #contenttwo-imagesix {
+                            position: absolute;
+                            top: 43vh;
+                            height: 35vh;
+                            width: 40%;
+                            border: 5px double black;
+                            left: 55%;
+
+                            
+                        }
+                        #contenttwo-h3tagtwo {
+                            position: absolute;
+                            left: 5vw;
+                            top:60vh ;
+                            color: #333; 
+                            font-style: oblique;
+                            font-weight: bolder;
+                            #contenttwo-atagone {
+                                position: absolute;
+                                left: 7vw;
+                                color:white;
+                                background-color:darkred;
+                                padding: 3vh;
+                                text-decoration: none;
+                                transition: all 0.25s ease-in-out;
+                                &:hover {
+                                    background-color: crimson;
+                                }
+                            }
+                        }
+                    }
+                    
+                    
+
+
+                }
+                
+               
+            }
+            #footer {
+                position: relative;
+                #footerh5-one{
+                    position: absolute;
+                    left:1vw;
+                }
+                #footerh5-two {
+                    position:absolute;
+                    left:80vw;
+                }
+                
             }
 
         
