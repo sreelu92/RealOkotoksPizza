@@ -276,7 +276,7 @@
   }
   #container #content #content-two .condenttwoimages {
     position: absolute;
-    border: 5px solid black;
+    border: 3px solid black;
     width: 275px;
     height: 183px;
   }
@@ -373,16 +373,30 @@
   #container #content #content-two #contenttwo-two #contenttwo-h3tagtwo #contenttwo-atagone:hover {
     background-color: crimson;
   }
-  #container #footer {
-    position: relative;
-  }
   #container #footer #footerh5-one {
-    position: absolute;
     left: 1vw;
   }
   #container #footer #footerh5-two {
-    position: absolute;
     left: 80vw;
+  }
+  #container #footer #footerdiv-one a {
+    position: relative;
+  }
+  #container #footer #footerdiv-one a p {
+    position: absolute;
+    top: 1vh;
+    opacity: 0;
+    -webkit-box-shadow: 0px 0px 0px grey;
+            box-shadow: 0px 0px 0px grey;
+    z-index: 2;
+  }
+  #container #footer #footerdiv-one a img:hover + p {
+    opacity: 1;
+    top: 0;
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    background-color: white;
+    color: black;
   }
 }
 /*# sourceMappingURL=style.css.map */
