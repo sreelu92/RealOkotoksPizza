@@ -575,19 +575,20 @@
         }
         #content-six {
             position: relative;
-            min-height: 180vh;
+            min-height: 265vh;
             h3 {
                 background-color:darkred;
                 color: white;
             }  
-            #content6-img1,#content6-img3,#content6-img5,#content6-img7 {
+            #content6-img1,#content6-img3,#content6-img5,#content6-img7,#content6-img9,#content6-img11,#content6-img13 {
                 position: absolute;
                 width:30%;
                 top:5vh;
                 left:2vw;
                 height: 108px;
             }
-            #content6-h4one,#content6-h4three,#content6-h4five ,#content6-h4seven{
+            #content6-h4one,#content6-h4three,#content6-h4five ,#content6-h4seven,#content6-h4nine,#content6-h4eleven,
+             #content6-h4thirteen{
                 position: absolute;
                 text-align: center;
                 top:22vh;
@@ -602,61 +603,69 @@
                 text-decoration: none;
                 text-align: center; 
             }
-            #content6-atag1,#content6-atag7,#content6-atag13,#content6-atag19 {
+            #content6-atag1,#content6-atag7,#content6-atag13,#content6-atag19,#content6-atag25,#content6-atag31,
+             #content6-atag37 {
                 top:26vh;
                 left:2vw;
                 padding: 2px;
   
             }
-            #content6-atag2,#content6-atag8 ,#content6-atag14,#content6-atag20 {
+            #content6-atag2,#content6-atag8 ,#content6-atag14,#content6-atag20,#content6-atag26,#content6-atag32,
+             #content6-atag38  {
                 top:26vh;
                 left:11vw;
                 padding-bottom: 5px;
             }
-            #content6-atag3,#content6-atag9,#content6-atag15,#content6-atag21  {
+            #content6-atag3,#content6-atag9,#content6-atag15,#content6-atag21,#content6-atag27,#content6-atag33,
+             #content6-atag39{
                 top:26vh;
                 left:25vw;
                 padding-bottom: 5px;
                 padding-right: 6px;
             }
-            #content6-ptag1,#content6-ptag3,#content6-ptag5, #content6-ptag7 {
+            #content6-ptag1,#content6-ptag3,#content6-ptag5, #content6-ptag7,#content6-ptag9,#content6-ptag11 ,
+             #content6-ptag13{
                 position: absolute;
                 top:33vh;
                 font-size:xx-small;
                 left:1vw;
                 width:40%; 
             }
-            #content6-img2,#content6-img4,#content6-img6 ,#content6-img8{
+            #content6-img2,#content6-img4,#content6-img6 ,#content6-img8,#content6-img10,#content6-img12,#content6-img14{
                 position: absolute;
                 width:30%;
                 top:5vh;
                 left:58vw;  
                 height: 108px;   
             }
-            #content6-h4two,#content6-h4four,#content6-h4six,#content6-h4eight{
+            #content6-h4two,#content6-h4four,#content6-h4six,#content6-h4eight,#content6-h4ten,#content6-h4twelve,
+             #content6-h4fourteen{
                 position: absolute;
                 text-align: center;
                 top:22vh;
                 left: 57vw;  
             }
-            #content6-atag4,#content6-atag5,#content6-atag6,#content6-atag10,#content6-atag16,#content6-atag22{
+            #content6-atag4,#content6-atag5,#content6-atag6,#content6-atag10,#content6-atag16,#content6-atag22,#content6-atag28,
+             #content6-atag34,#content6-atag40{
                 top:26vh;
                 left:58vw;
                 padding: 2px;  
             }
-            #content6-atag5,#content6-atag11,#content6-atag17,#content6-atag23 {
+            #content6-atag5,#content6-atag11,#content6-atag17,#content6-atag23,#content6-atag29,#content6-atag35,
+             #content6-atag41 {
                 
                 left:67vw;
                 padding: 2px;  
                   
             }
-            #content6-atag6,#content6-atag12 ,#content6-atag18,#content6-atag24{
+            #content6-atag6,#content6-atag12 ,#content6-atag18,#content6-atag24,#content6-atag30,#content6-atag36,
+             #content6-atag42{
                
                 left:82vw;
                 padding: 2px;  
                   
             }
-            #content6-ptag2,#content6-ptag4,#content6-ptag6,#content6-ptag8 {
+            #content6-ptag2,#content6-ptag4,#content6-ptag6,#content6-ptag8,#content6-ptag10,#content6-ptag12,#content6-ptag14 {
                 position: absolute;
                 top:33vh;
                 font-size: xx-small;
@@ -708,14 +717,68 @@
             #content6-h4eight {
                 left: 63vw;
             }
+            #content6-img9,#content6-img10 {
+                top: 155vh;
+            }
+            #content6-h4nine,#content6-h4ten {
+                top: 173vh;
+            }
+            #content6-atag25,#content6-atag26,#content6-atag27,#content6-atag28,#content6-atag29,#content6-atag30 {
+                top: 176vh;;
+            }
+            #content6-ptag9,#content6-ptag10 {
+                top: 183vh;
+            }
+            #content6-img11,#content6-img12 {
+                top:194vh;
+            }
+            #content6-h4eleven,#content6-h4twelve {
+                top:211vh;
+            }
+            #content6-atag31, #content6-atag32,#content6-atag33,#content6-atag34,#content6-atag35,#content6-atag36  {
+                top: 214vh;
+            }
+            #content6-ptag11,#content6-ptag12 {
+                top: 221vh;
+            }
+            #content6-img13,#content6-img14 {
+                top:229vh;
+            }
+            #content6-h4thirteen {
+                top:246vh;
+                left: 6vw;
+            }
+            #content6-atag37,#content6-atag38,#content6-atag39,#content6-atag40,#content6-atag41,#content6-atag42{
+                top:249vh;
+            }
+            #content6-ptag13,#content6-ptag14 {
+                top:257vh;
+            }
+            #content6-h4fourteen {
+                top:246vh;
+                left: 63vw;
+            }
+
+
+
+
+
+
             
-           
-
-  
 
 
-
+            
+            
         }
+
+    }
+    #footer {
+        width:100%;
+        min-height: 12vh;
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTaqkheI1eHco59pIjVVJ_ScUJ08H9L6hf4-w&usqp=CAU);
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+
 
     }
 
