@@ -7,6 +7,7 @@
   display: -ms-grid;
   display: grid;
   row-gap: 1vh;
+  background-image: url(https://www.lefthudson.com/wp-content/uploads/2019/11/white-background-wallpaper-awesome-white-wallpapers-in-hd-barbaras-hd-wallpapers-ideas-of-white-background-wallpaper.jpg);
 }
 
 #container #header {
@@ -17,13 +18,14 @@
   width: 100%;
   height: 20vh;
   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTaqkheI1eHco59pIjVVJ_ScUJ08H9L6hf4-w&usqp=CAU);
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 #container #header h3 {
   font-size: larger;
   text-align: center;
   position: relative;
+  font-weight: bolder;
+  font-family: 'Source Serif Pro', serif;
 }
 
 #container #header h3 #pizza-logo {
@@ -55,8 +57,9 @@
 #container #content #heading {
   font-size: larger;
   text-align: center;
-  background-color: darkred;
-  color: white;
+  background-color: tan;
+  color: black;
+  font-weight: bolder;
 }
 
 #container #content #content-one {
@@ -90,8 +93,8 @@
 }
 
 #container #content #content-two h3 {
-  background-color: darkred;
-  color: white;
+  background-color: tan;
+  color: black;
 }
 
 #container #content #content-two #contenttwo-img1 {
@@ -150,8 +153,8 @@
 }
 
 #container #content #content-three h3 {
-  background-color: darkred;
-  color: white;
+  background-color: tan;
+  color: black;
 }
 
 #container #content #content-three #content3-img1 {
@@ -209,8 +212,8 @@
 }
 
 #container #content #content-four h3 {
-  background-color: darkred;
-  color: white;
+  background-color: tan;
+  color: black;
 }
 
 #container #content #content-four #content4-img1 {
@@ -278,13 +281,13 @@
 
 #container #content #content-four #content4-atag4 {
   top: 25vh;
-  left: 65vw;
+  left: 60vw;
   padding: 2px;
 }
 
 #container #content #content-four #content4-atag5 {
   top: 25vh;
-  left: 75vw;
+  left: 70vw;
   padding: 2px;
 }
 
@@ -468,12 +471,12 @@
 
 #container #content #content-five {
   position: relative;
-  min-height: 130vh;
+  min-height: 90vh;
 }
 
 #container #content #content-five h3 {
-  background-color: darkred;
-  color: white;
+  background-color: tan;
+  color: black;
 }
 
 #container #content #content-five #content5-img1 {
@@ -646,8 +649,8 @@
 }
 
 #container #content #content-six h3 {
-  background-color: darkred;
-  color: white;
+  background-color: tan;
+  color: black;
 }
 
 #container #content #content-six #content6-img1, #container #content #content-six #content6-img3, #container #content #content-six #content6-img5, #container #content #content-six #content6-img7, #container #content #content-six #content6-img9, #container #content #content-six #content6-img11, #container #content #content-six #content6-img13 {
@@ -867,5 +870,207 @@
   display: grid;
   -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+@media only screen and (min-width: 768px) {
+  #container #header {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(100px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    width: 100%;
+    height: 8vh;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #container #header h3 {
+    position: relative;
+    font-weight: bolder;
+    font-size: large;
+  }
+  #container #header h3 #pizza-logo {
+    position: absolute;
+    top: 2vh;
+    width: 28%;
+  }
+  #container #header a {
+    text-decoration: none;
+    background-color: darkred;
+    color: white;
+    padding: 2px;
+  }
+  #container #content #heading {
+    height: 4vh;
+    font-size: x-large;
+    font-weight: bolder;
+  }
+  #container #content #content-one #contentone-atagone, #container #content #content-one #contentone-atagtwo {
+    padding: 4px;
+    font-size: x-large;
+  }
+  #container #content #content-one h3, #container #content #content-one h4 {
+    font-size: x-large;
+  }
+  #container #content #content-two h3 {
+    height: 4vh;
+    font-size: x-large;
+    font-weight: bolder;
+  }
+  #container #content #content-two #contenttwo-img1 {
+    position: absolute;
+    left: 7vw;
+  }
+  #container #content #content-two #contenttwo-h4tagone, #container #content #content-two #contenttwo-h4tagtwo {
+    top: 27vh;
+    left: 17vw;
+    font-size: x-large;
+  }
+  #container #content #content-two #contenttwo-atagone, #container #content #content-two #contenttwo-atagtwo {
+    top: 30vh;
+    left: 14vw;
+    padding: 4px;
+    font-size: x-large;
+  }
+  #container #content #content-two #contenttwo-h4tagtwo {
+    left: 65vw;
+  }
+  #container #content #content-two #contenttwo-atagtwo {
+    left: 62vw;
+  }
+  #container #content #content-three {
+    min-height: 38vh;
+  }
+  #container #content #content-three h3 {
+    height: 4vh;
+    font-size: x-large;
+    font-weight: bolder;
+  }
+  #container #content #content-three #content3-img1, #container #content #content-three #content3-img2 {
+    top: 5vh;
+    left: 7vw;
+    width: 227px;
+    height: 204px;
+  }
+  #container #content #content-three #content3-h4one, #container #content #content-three #content3-h4two {
+    top: 26vh;
+    left: 10vw;
+    font-weight: bolder;
+    font-size: x-large;
+  }
+  #container #content #content-three #content3-atagone, #container #content #content-three #content3-atagtwo {
+    top: 32vh;
+    left: 13vw;
+    padding: 4px;
+    font-size: x-large;
+  }
+  #container #content #content-three #content3-img2 {
+    left: 57vw;
+  }
+  #container #content #content-three #content3-h4two {
+    left: 58vw;
+  }
+  #container #content #content-three #content3-atagtwo {
+    left: 63vw;
+  }
+  #container #content #content-four {
+    min-height: 127vh;
+  }
+  #container #content #content-four h3 {
+    height: 4vh;
+    font-size: x-large;
+    font-weight: bolder;
+  }
+  #container #content #content-four #content4-img1, #container #content #content-four #content4-img2, #container #content #content-four #content4-img3, #container #content #content-four #content4-img4, #container #content #content-four #content4-img5, #container #content #content-four #content4-img6 {
+    width: 230px;
+    height: 230px;
+  }
+  #container #content #content-four #content4-h4one, #container #content #content-four #content4-h4two, #container #content #content-four #content4-h4three, #container #content #content-four #content4-h4four, #container #content #content-four #content4-h4five, #container #content #content-four #content4-h4six {
+    top: 28vh;
+    left: 8vw;
+    font-size: x-large;
+    font-weight: bolder;
+  }
+  #container #content #content-four #content4-atagone, #container #content #content-four #content4-atagtwo, #container #content #content-four #content4-atagthree, #container #content #content-four #content4-atag4, #container #content #content-four #content4-atag5,
+  #container #content #content-four #content4-atag6, #container #content #content-four #content4-atag7, #container #content #content-four #content4-atag8, #container #content #content-four #content4-atag9, #container #content #content-four #content4-atag10,
+  #container #content #content-four #content4-atag11, #container #content #content-four #content4-atag12, #container #content #content-four #content4-atag13, #container #content #content-four #content4-atag14, #container #content #content-four #content4-atag15,
+  #container #content #content-four #content4-atag16, #container #content #content-four #content4-atag17, #container #content #content-four #content4-atag18 {
+    top: 31vh;
+    padding: 10px;
+  }
+  #container #content #content-four #content4-atagtwo {
+    left: 12vw;
+  }
+  #container #content #content-four #content4-ptag1, #container #content #content-four #content4-ptag2, #container #content #content-four #content4-ptag3, #container #content #content-four #content4-ptag4, #container #content #content-four #content4-ptag5, #container #content #content-four #content4-ptag6 {
+    top: 37vh;
+    font-size: medium;
+    left: 1vw;
+    width: 30%;
+  }
+  #container #content #content-four #content4-h4two {
+    left: 60vw;
+  }
+  #container #content #content-four #content4-atag5, #container #content #content-four #content4-atag11 {
+    left: 71vw;
+  }
+  #container #content #content-four #content4-ptag2, #container #content #content-four #content4-ptag4, #container #content #content-four #content4-ptag6 {
+    left: 60vw;
+  }
+  #container #content #content-four #content4-img3, #container #content #content-four #content4-img4 {
+    top: 45vh;
+  }
+  #container #content #content-four #content4-h4three, #container #content #content-four #content4-h4four {
+    top: 68vh;
+  }
+  #container #content #content-four #content4-atag7, #container #content #content-four #content4-atag8, #container #content #content-four #content4-atag9, #container #content #content-four #content4-atag10, #container #content #content-four #content4-atag11, #container #content #content-four #content4-atag12 {
+    top: 71vh;
+  }
+  #container #content #content-four #content4-ptag3, #container #content #content-four #content4-ptag4 {
+    top: 77vh;
+  }
+  #container #content #content-four #content4-h4four {
+    left: 62vw;
+  }
+  #container #content #content-four #content4-img5, #container #content #content-four #content4-img6 {
+    top: 86vh;
+  }
+  #container #content #content-four #content4-h4five, #container #content #content-four #content4-h4six {
+    top: 109vh;
+  }
+  #container #content #content-four #content4-atag13, #container #content #content-four #content4-atag14, #container #content #content-four #content4-atag15, #container #content #content-four #content4-atag16, #container #content #content-four #content4-atag17, #container #content #content-four #content4-atag18 {
+    top: 115vh;
+  }
+  #container #content #content-four #content4-ptag5, #container #content #content-four #content4-ptag6 {
+    top: 121vh;
+  }
+  #container #content #content-four #content4-h4six {
+    left: 66vw;
+  }
+  #container #content #content-five h3 {
+    height: 4vh;
+    font-size: x-large;
+    font-weight: bolder;
+  }
+  #container #content #content-five #content5-img1 {
+    width: 230px;
+    height: 230px;
+  }
+  #container #content #content-five #content5-h4one {
+    top: 28vh;
+    left: 6vw;
+    font-size: x-large;
+    font-weight: bolder;
+  }
+  #container #content #content-five #content5-atag1, #container #content #content-five #content5-atag2, #container #content #content-five #content5-atag3 {
+    top: 34vh;
+    padding: 10px;
+  }
+  #container #content #content-five #content5-ptag1 {
+    top: 40vh;
+    font-size: medium;
+    left: 1vw;
+    width: 30%;
+  }
 }
 /*# sourceMappingURL=style2.css.map */
