@@ -218,8 +218,8 @@
   #container #header {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    -ms-grid-columns: (minmax(90px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;

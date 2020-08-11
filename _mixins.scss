@@ -7,4 +7,14 @@
     color: white;
     background-color: darkred;
     text-decoration: none;
+    text-align: center;
+}
+@mixin atagAnimation {
+    transition: all 0.25s ease-in-out; 
+    &:hover {
+        background-color: crimson;
+    }
+
+
+
 }
