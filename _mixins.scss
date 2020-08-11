@@ -1,0 +1,10 @@
+@mixin gridStyle() {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(60px,1fr));
+    column-gap: 1%;
+}
+@mixin atagStyle () {
+    color: white;
+    background-color: darkred;
+    text-decoration: none;
+}
