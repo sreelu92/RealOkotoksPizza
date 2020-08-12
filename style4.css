@@ -49,15 +49,44 @@
 }
 
 #container #content {
-  width: 90%;
+  display: -ms-grid;
+  display: grid;
   min-height: 80vh;
-  margin-left: 5%;
+  width: 95%;
+  margin-left: 2.5%;
+  row-gap: 3vh;
+}
+
+#container #content #content-1 {
   display: -ms-grid;
   display: grid;
   justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  row-gap: 3vh;
+  height: 40vh;
+}
+
+#container #content #content-1 #content-h3tag1 {
+  top: 10vh;
+  font-size: xx-large;
+  color: #333;
+  font-family: 'Crimson Text', serif;
+}
+
+#container #content #content-1 #hrtag-one, #container #content #content-1 #hrtag-two {
+  width: 70%;
+}
+
+#container #content #content-1 h4 {
+  color: #8c6349;
+  font-family: 'Crimson Text', serif;
+  font-size: large;
+}
+
+#container #content #content-1 #ptag-one, #container #content #content-1 #ptag-one, #container #content #content-1 #ptag-one {
+  color: #333;
 }
 
 #container #content #content-2 {
@@ -67,13 +96,19 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  row-gap: 2vh;
+  height: 40vh;
 }
 
-#container #content #content-2 #content2-h2tag, #container #content #content-2 #content2-h3tag, #container #content #content-2 #content2-h4tag, #container #content #content-2 #content2-h5tag, #container #content #content-2 #content2-h5twotag, #container #content #content-2 #content2-h5threetag {
-  color: #333;
-  font-family: 'Quattrocento', serif;
+#container #content #content-2 h4 {
   text-align: center;
+  color: #8c6349;
+  font-family: 'Crimson Text', serif;
+  font-size: large;
+}
+
+#container #content #content-2 iframe {
+  width: 100%;
+  height: 35vh;
 }
 
 #container #footer {
@@ -114,29 +149,22 @@
     padding: 5px;
     font-size: medium;
   }
-  #container #content {
-    min-height: 80vh;
+  #container #content #content-1 #content-h3tag1 {
+    font-size: 3em;
   }
-  #container #content #content-1 {
-    width: 100%;
+  #container #content #content-1 #hrtag-one, #container #content #content-1 #hrtag-two {
+    width: 70%;
+    height: 1%;
   }
-  #container #content #content-1 iframe {
-    height: 40vh;
+  #container #content #content-1 h4 {
+    font-size: 2em;
   }
-  #container #content #content-2 {
-    row-gap: 2vh;
-    font-weight: bolder;
-  }
-  #container #content #content-2 #content2-h2tag {
+  #container #content #content-1 #ptag-one, #container #content #content-1 #ptag-two, #container #content #content-1 #ptag-three {
+    color: #333;
     font-size: x-large;
   }
-  #container #content #content-2 #content2-h3tag {
-    font-size: larger;
-    font-weight: bolder;
-  }
-  #container #content #content-2 #content2-h4tag, #container #content #content-2 #content2-h5tag, #container #content #content-2 #content2-h5twotag, #container #content #content-2 #content2-h5threetag {
-    font-size: large;
-    font-weight: bolder;
+  #container #content #content-2 h4 {
+    font-size: 2em;
   }
   #container #footer {
     font-size: large;
@@ -174,28 +202,33 @@
     background-color: crimson;
   }
   #container #content {
-    min-height: 80vh;
+    min-height: 130vh;
+    row-gap: 10vh;
   }
   #container #content #content-1 {
-    width: 100%;
+    min-height: 65vh;
   }
-  #container #content #content-1 iframe {
-    height: 60vh;
+  #container #content #content-1 #content-h3tag1 {
+    font-size: 3em;
   }
-  #container #content #content-2 {
-    row-gap: 4vh;
-    font-weight: bolder;
+  #container #content #content-1 #hrtag-one, #container #content #content-1 #hrtag-two {
+    width: 50%;
   }
-  #container #content #content-2 #content2-h2tag {
+  #container #content #content-1 h4 {
     font-size: xx-large;
   }
-  #container #content #content-2 #content2-h3tag {
-    font-size: larger;
-    font-weight: bolder;
+  #container #content #content-1 #ptag-one, #container #content #content-1 #ptag-one, #container #content #content-1 #ptag-one {
+    font-size: x-large;
   }
-  #container #content #content-2 #content2-h4tag, #container #content #content-2 #content2-h5tag, #container #content #content-2 #content2-h5twotag, #container #content #content-2 #content2-h5threetag {
-    font-size: large;
-    font-weight: bolder;
+  #container #content #content-2 {
+    min-height: 65vh;
+  }
+  #container #content #content-2 h4 {
+    font-size: xx-large;
+  }
+  #container #content #content-2 iframe {
+    width: 75%;
+    height: 60vh;
   }
   #container #footer {
     justify-items: normal;
@@ -210,4 +243,4 @@
     height: 32px;
   }
 }
-/*# sourceMappingURL=style3.css.map */
+/*# sourceMappingURL=style4.css.map */
