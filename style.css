@@ -131,34 +131,31 @@
 
 @media only screen and (min-width: 600px) {
   #container #header {
+    height: 25vh;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (minmax(100px, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    -ms-grid-columns: (minmax(40px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+    height: 10vh;
+    font-size: larger;
     justify-items: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 15vh;
   }
   #container #header h3 {
-    font-size: xx-large;
+    font-size: x-large;
   }
   #container #header h3 #pizza-logo {
-    top: 4vh;
-    width: 25%;
-    position: absolute;
-    top: 7vh;
-    left: 5vw;
+    width: 27%;
+    margin-top: 2.5vh;
   }
-  #container #header h3 a {
-    color: white;
+  #container #header a {
     text-decoration: none;
     background-color: darkred;
-    padding: 1vh;
-  }
-  #container #header #pizza-logo-two {
-    display: none;
+    color: white;
+    padding: 5px;
+    font-size: medium;
   }
   #container #content {
     min-height: 75vh;
@@ -195,22 +192,18 @@
     display: none;
   }
   #container #footer {
-    min-height: 8vh;
-    position: relative;
-  }
-  #container #footer #footerh5-one {
-    position: absolute;
-    top: 2vh;
+    font-size: x-large;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+    height: 10vh;
   }
   #container #footer #footerdiv-one {
-    position: absolute;
-    top: 2vh;
-    left: 40vw;
+    margin-left: 5vw;
   }
-  #container #footer #footerh5-two {
-    position: absolute;
-    top: 2vh;
-    left: 70vw;
+  #container #footer #footerdiv-one a img {
+    width: 8%;
   }
 }
 

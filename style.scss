@@ -127,36 +127,29 @@
     }
     @media only screen and(min-width:600px)
     {
-            #header {
-                display: grid;
-                grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
-                justify-items: center;
-                align-items: center;
-                height: 15vh;
-                h3 {
-                
-                    font-size: xx-large;
-                    #pizza-logo {
-                        top:4vh;
-                        width: 25%;
-                        position: absolute;
-                        top: 7vh;
-                        left: 5vw;
-                    }
-                    a{
-                    color: white;
-                    text-decoration: none;
-                    background-color: darkred;
-                    padding: 1vh;
-                    }
-                    
-
+        #header{
+            height:25vh;
+            h3 {
+                font-size:x-large ;
+                #pizza-logo {
+                    width:27%;
+                    margin-top: 2.5vh;
                 }
-                #pizza-logo-two {
-                    display: none;
-                }
-           
             }
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(40px,1fr));
+            height: 10vh;
+            font-size: larger;
+            justify-items: center;
+            align-items: center;
+            a {
+                text-decoration: none;
+                background-color: darkred;
+                color: white;
+                padding: 5px;
+                font-size: medium;
+            }
+        }
             #content {
                 min-height: 75vh;
                 
@@ -199,33 +192,22 @@
                 
             }
             #footer {
-                min-height:8vh;
-                position: relative;
-                
-                #footerh5-one {
-                    position: absolute;
-                    top: 2vh;
-
-
-                }
+                font-size:x-large;
+                align-items: center;
+                justify-items: center;
+                height: 10vh;
                 #footerdiv-one {
-                    position: absolute;
-                    top: 2vh;
-                    left: 40vw;
+                    margin-left: 5vw;
+                    a {
+                        img {
+                            width: 8%;
+                        }
+                    }
                     
-                    
-                    
-                    
-                  
                 }
-                #footerh5-two {
-                    position: absolute;
-                    top: 2vh;
-                    left:70vw;
-                }
+    
             }
-        
-    }
+        }
     @media only screen  and(min-width:1020px){
        
             
