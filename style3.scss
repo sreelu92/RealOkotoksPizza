@@ -8,9 +8,78 @@
     row-gap: 3vh;
     background-image: url(https://www.lefthudson.com/wp-content/uploads/2019/11/white-background-wallpaper-awesome-white-wallpapers-in-hd-barbaras-hd-wallpapers-ideas-of-white-background-wallpaper.jpg);
     min-height: 70vh;
+    #mobile-header {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: 2fr 4fr 2fr;
+        min-height: 19vh;
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTaqkheI1eHco59pIjVVJ_ScUJ08H9L6hf4-w&usqp=CAU);
+        #mobile-logo {
+            img {
+                width: 70%;
+            }
+        }
+        #mobile-spacer {
+            h3 {
+                font-size: x-large;
+                font-family: 'Crimson Text', serif; 
+
+            }
+        }
+        #hamburger-menu {
+            #mobile-checkbox {
+                width: 50px;
+                height: 50px;
+                position: absolute;
+                opacity: 0;
+                z-index: 5;
+            }
+            #mobile-checkbox:checked ~ #mobile-header-menu {
+                top: 0;
+                opacity: 1;
+                transition: all 0.5s ease-in-out;
+            }
+            #hamburger-container {
+                display: grid;
+                justify-items: center;
+                align-items: center;
+                width: 50px;
+                height: 50px;
+                z-index: 4;
+                position: relative;
+                .hamburger-line {
+                    width: 30px;
+                    height: 4px;
+                    background-color: black;
+                }
+            }
+            #mobile-header-menu {
+                transition: all 0.5s ease-in-out;
+                position: absolute;
+                width: 100%;
+                background-color: burlywood;
+                display: grid;
+                top:-19vh;
+                opacity: 0;
+                left: 0;
+                min-height: 19vh;
+                background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTaqkheI1eHco59pIjVVJ_ScUJ08H9L6hf4-w&usqp=CAU);
+                a {
+                    color:black;
+                    text-decoration: none;
+                    font-weight: bold;
+
+                }
+            }
+
+        }
+    }
+   
   
    #header {
         display: grid;
+        display: none;
         grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
         width: 100%;
         height:20vh;
@@ -70,94 +139,122 @@
         grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
     }
     @media only screen and(min-width:600px)
-    {
-        
-            #header{
-                height:25vh;
-                h3 {
-                    font-size:x-large ;
-                    #pizza-logo {
-                        width:27%;
-                        margin-top: 2.5vh;
-                    }
-                }
-                display: grid;
-                grid-template-columns: repeat(auto-fit,minmax(40px,1fr));
-                height: 10vh;
-                font-size: larger;
-                justify-items: center;
-                align-items: center;
-                a {
-                    text-decoration: none;
-                    background-color: darkred;
-                    color: white;
-                    padding: 5px;
-                    font-size: medium;
+    {   
+        #mobile-header {
+            display: none;
+        }
+        #header{
+            height:25vh;
+            h3 {
+                font-size:x-large ;
+                #pizza-logo {
+                    width:27%;
+                    margin-top: 2.5vh;
                 }
             }
-            #content {
-                min-height: 80vh;
-                #content-1 {
-                    width:100%;
-                    iframe {
-                       height:40vh; 
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(40px,1fr));
+            height: 10vh;
+            font-size: larger;
+            justify-items: center;
+            align-items: center;
+            a {
+                text-decoration: none;
+                background-color: darkred;
+                color: white;
+                padding: 5px;
+                font-size: medium;
+            }
+        }
+        #content {
+            min-height: 80vh;
+            #content-1 {
+                width:100%;
+                iframe {
+                   height:40vh; 
 
-                    }
-                }
-                #content-2 {
-                    row-gap: 2vh;
-                    #content2-h2tag  {
-                        font-size: x-large;
-                        
-                    }
-                       font-weight: bolder;
-                     #content2-h3tag {
-                        font-size: larger;
-                        font-weight: bolder;
-                    }
-                    #content2-h4tag,#content2-h5tag,#content2-h5twotag,#content2-h5threetag {
-                        font-size: large;
-                        font-weight: bolder;
-                    }
                 }
             }
-            #footer {
-                font-size: large;
-                align-items: center;
-                justify-items: center;
-                height: 10vh;
-                #footerdiv-one {
-                    margin-left: 5vw;
-                    a {
-                        img {
-                            width: 8%;
-                        }
-                    }
+            #content-2 {
+                row-gap: 2vh;
+                #content2-h2tag  {
+                    font-size: x-large;
                     
                 }
-    
+                   font-weight: bolder;
+                 #content2-h3tag {
+                    font-size: larger;
+                    font-weight: bolder;
+                }
+                #content2-h4tag,#content2-h5tag,#content2-h5twotag,#content2-h5threetag {
+                    font-size: large;
+                    font-weight: bolder;
+                }
             }
+        }
+        #footer {
+            font-size: large;
+            align-items: center;
+            justify-items: center;
+            height: 10vh;
+            #footerdiv-one {
+                margin-left: 5vw;
+                a {
+                    img {
+                        width: 8%;
+                    }
+                }
+                
+            }
+
+        }
+
+            
         
         
     }
     @media only screen and(min-width:1020px)
     {
+        #mobile-header {
+            display: none;
+        }
         #header {
-            height: 20vh;
-           
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(90px,1fr));
+            align-items: center;
+            justify-items: center;
+            width: 100%;
+          
             h3 {
-                font-size: xx-large;
-
-                #pizza-logo{
-                    width:35%;
-                    margin-top: 4vh;  
-                }
+                display: none;
+                
+                
+                 #pizza-logo {
+                 position: absolute;
+                   left:0;
+                   top:4vh;
+                     
+                 }
+                 
+            }
+            #pizza-logo-two {
+                display: block;
+                width:30%;
             }
             a {
-                padding: 11px;
-                @include atagAnimation ();
+                font-size: large;
+                color: white;
+                text-decoration: none;
+                background-color: darkred;
+                padding: 1vh;
+                transition: all 0.25s ease-in-out;
+                &:hover {
+                    background-color: crimson;
+                }
             }
+          
         }
+        
         #content {
             min-height: 80vh;
             #content-1 {
