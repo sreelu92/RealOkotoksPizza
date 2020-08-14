@@ -58,11 +58,10 @@
                 transition: all 0.5s ease-in-out;
                 position: absolute;
                 width: 100%;
-                background-color: burlywood;
                 display: grid;
                 top:-19vh;
                 opacity: 0;
-                left: 0;
+                left: 30vw;
                 min-height: 19vh;
                 background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTaqkheI1eHco59pIjVVJ_ScUJ08H9L6hf4-w&usqp=CAU);
                 a {
@@ -117,14 +116,15 @@
       
         min-height: 75vh;
         width: 100%;
-        row-gap: 3vh;
-        
+        row-gap: 5vh;        
         #heading {
             font-size: larger;
             text-align: center;
-            background-color: tan;
+            background-color: burlywood;
             color: black;
             font-weight: bolder;
+            background-image: url(https://thumbs.dreamstime.com/t/texture-oak-veneer-natural-background-extremely-high-resolution-photo-texture-oak-veneer-natural-background-110616367.jpg);
+
             
         }
         #content-one {
@@ -145,6 +145,21 @@
                 background-color: darkred;
                 padding: 4px;
             }
+        }
+
+        #discount {
+            min-height:4vh;
+            p {
+                text-align: center;
+                background-image: url(https://thumbs.dreamstime.com/t/texture-oak-veneer-natural-background-extremely-high-resolution-photo-texture-oak-veneer-natural-background-110616367.jpg);
+                margin-left: 6vw;
+                margin-right: 6vw;
+                font-size: large;
+                font-weight: bold;
+                color: #333;
+                font-family:"adobe-caslon-pro",serif;         
+            }
+            
         }
         #content-two {
             display: grid;
@@ -204,16 +219,19 @@
                 text-decoration: none;
                 background-color: darkred;
                 color: white;
-                padding: 5px;
+                padding: 10px;
                 font-size: medium;
             }
         }
         #content {
             display: grid;
             row-gap: 5vh;
+            align-items: center;
+            text-align: center;
             #heading {
                 font-size: xx-large;
                 padding: 10px;
+
             }
             #content-one {
                 h3,h4 {
@@ -223,6 +241,17 @@
                     padding:10px;
                     font-size: x-large;
                 }
+            }
+            #discount {
+                min-height:9vh;
+                p {
+                   
+                    font-size:2em;   
+                    font-style: italic; 
+                    margin-left: 8vw; 
+                    margin-right:8vw ;   
+                }
+                
             }
             #content-two {
                 min-height:480vh;
@@ -309,9 +338,11 @@
             row-gap: 7vh;
             width: 90%;
             margin-left: 5%;
+            align-items: center;
+            text-align: center;
             #heading {
-                margin-left: 8vw;
-                margin-right: 8vw;
+                margin-left: 10vw;
+                margin-right: 10vw;
                 color: #333;
 
             }
@@ -332,6 +363,18 @@
                 }
 
             }
+            #discount {
+                min-height:9vh;
+                p {
+                    margin-left: 20vw;
+                    margin-right: 20vw;
+                    font-size:2em;
+                    font-weight: bolder;
+
+                    
+                }
+                
+            }
             #content-two {
                 #content2-1,#content2-2,#content2-3,#content2-4,#content2-5,#content2-6,#content2-7,#content2-8,#content2-9,
                 #content2-10,#content2-11,#content2-12,#content2-13,#content2-14,#content2-15,#content2-16,#content2-17,
@@ -343,6 +386,9 @@
                             width: 270px;
                             height: 270px;
                         }
+                    }
+                    .content-ptag {
+                        text-align: center;
                     }
                     #atag-1,#atag-2,#atag-3,#atag-4,#atag-5,#atag-6,#atag-7,#atag-8,#atag-9,#atag-10,#atag-11,#atag-12,#atag-13,
                     #atag-14,#atag-15,#atag-16,#atag-17,#atag-18,#atag-19,#atag-20,#atag-21,#atag-22,#atag-23,#atag-24 {

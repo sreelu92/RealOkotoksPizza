@@ -6,7 +6,7 @@
 #container {
   display: -ms-grid;
   display: grid;
-  row-gap: 2vh;
+  row-gap: 5vh;
   background-image: url(https://www.lefthudson.com/wp-content/uploads/2019/11/white-background-wallpaper-awesome-white-wallpapers-in-hd-barbaras-hd-wallpapers-ideas-of-white-background-wallpaper.jpg);
 }
 
@@ -62,7 +62,7 @@
 
 #container #mobile-header #hamburger-menu #hamburger-container .hamburger-line {
   width: 30px;
-  height: 4px;
+  height: 3px;
   background-color: black;
 }
 
@@ -76,7 +76,7 @@
   display: grid;
   top: -19vh;
   opacity: 0;
-  left: 0;
+  left: 30vw;
   min-height: 19vh;
   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTaqkheI1eHco59pIjVVJ_ScUJ08H9L6hf4-w&usqp=CAU);
 }
@@ -126,75 +126,132 @@
 
 #container #content {
   width: 99%;
-  min-height: 65vh;
+  min-height: 60vh;
   display: -ms-grid;
   display: grid;
-  row-gap: 1vw;
-}
-
-#container #content #content-one {
-  width: 99%;
-  height: 20vh;
-  background-color: black;
-  position: relative;
-  margin-left: 1vw;
-}
-
-#container #content #content-one img {
-  width: 50%;
-  height: 20vh;
-}
-
-#container #content #content-one #ptag-one {
-  position: absolute;
-  font-weight: bolder;
-  top: 7vh;
-  left: 50vw;
-  font-style: italic;
-  color: white;
-}
-
-#container #content #content-one #ptagone-one {
-  display: none;
-}
-
-#container #content #content-one #ptag-two {
-  position: absolute;
-  font-style: italic;
-  font-size: smaller;
-  font-weight: bolder;
-  top: 21vh;
-  left: 50vw;
-  text-align: center;
-  background-color: black;
-  color: white;
-}
-
-#container #content #content-one #ptag-two #atagone-content {
-  color: goldenrod;
-}
-
-#container #content #content-one #contentimage-one {
-  width: 100%;
-  height: 20vh;
-}
-
-#container #content #content-one #ptag-three {
-  position: absolute;
-  top: 54vh;
-  color: white;
-  left: 55vw;
-}
-
-#container #content #content-one #ptag-three #atagtwo-content {
-  color: goldenrod;
-  position: absolute;
-  left: 10vw;
-  font-style: italic;
+  row-gap: 12vw;
 }
 
 #container #content #content-two {
   display: none;
+}
+
+#container #content #content-1 {
+  min-height: 6vh;
+}
+
+#container #content #content-1 h2, #container #content #content-1 h4 {
+  color: #333;
+  font-family: "adobe-caslon-pro",serif;
+  font-style: normal;
+  font-size: xx-large;
+  margin-left: 5vw;
+  text-align: center;
+}
+
+#container #content #content-1 h4 {
+  font-style: italic;
+  font-size: 1em;
+  margin-left: 6vw;
+}
+
+#container #content #content-1 #hrtag-one, #container #content #content-1 #hrtag-two {
+  width: 70%;
+  margin-left: 15vw;
+  margin-top: 8vh;
+}
+
+#container #content #content-1 h3 {
+  color: #8c6349;
+  font-size: small;
+  margin-top: 2.5vh;
+  width: 60%;
+  text-align: center;
+  margin-left: 20vw;
+}
+
+#container #content #content-1 #hrtag-two {
+  margin-top: 4vh;
+}
+
+#container #content #content-2 {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 2vh;
+}
+
+#container #content #content-2 .condent2-images {
+  width: 60%;
+  border: 1px solid black;
+}
+
+#container #content #content-3 {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 60vh;
+}
+
+#container #content #content-3 #content3-h3tagone {
+  color: #333;
+  font-style: oblique;
+  font-weight: bolder;
+  font-size: small;
+  width: 95%;
+  text-align: center;
+}
+
+#container #content #content-3 #content3-h3tagone #content3-atagone {
+  color: goldenrod;
+}
+
+#container #content #content-3 #content3-img1 {
+  width: 80%;
+  border: 4px double black;
+}
+
+#container #content #content-4 {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 60vh;
+}
+
+#container #content #content-4 #content4-h3tagone {
+  color: #333;
+  font-style: oblique;
+  font-weight: bolder;
+  font-size: small;
+  width: 95%;
+  text-align: center;
+}
+
+#container #content #content-4 #content4-h3tagone #content4-atagone {
+  color: white;
+  background-color: darkred;
+  padding: 3vh;
+  text-decoration: none;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+#container #content #content-4 #content4-h3tagone #content4-atagone:hover {
+  background-color: crimson;
+}
+
+#container #content #content-4 #content4-img2 {
+  width: 80%;
+  border: 4px double black;
 }
 
 #container #footer {
@@ -235,48 +292,44 @@
     text-decoration: none;
     background-color: darkred;
     color: white;
-    padding: 5px;
+    padding: 10px;
     font-size: medium;
-  }
-  #container #content {
-    min-height: 75vh;
-  }
-  #container #content #content-1 {
-    display: none;
-  }
-  #container #content #content-one {
-    position: relative;
-    margin-top: 1%;
-  }
-  #container #content #content-one #ptag-one {
-    font-size: 1.4em;
-  }
-  #container #content #content-one #ptagone-one {
-    display: none;
-  }
-  #container #content #content-one iframe {
-    height: 25vh;
-  }
-  #container #content #content-one #contentimage-one {
-    height: 28vh;
-  }
-  #container #content #content-one #ptag-three {
-    position: absolute;
-    left: 65vw;
-    top: 55vh;
-    font-size: x-large;
-  }
-  #container #content #content-one #ptag-three #atagtwo-content {
-    position: absolute;
-    left: 3vw;
-    top: 5vh;
-    font-size: larger;
   }
   #container #content #content-two {
     display: none;
   }
-  #container #footer {
+  #container #content #content-1 h2, #container #content #content-1 h4 {
+    font-size: 3em;
+  }
+  #container #content #content-1 h4 {
     font-size: x-large;
+  }
+  #container #content #content-1 h3 {
+    font-size: xx-large;
+  }
+  #container #content #content-2 .condent2-images {
+    width: 275px;
+    height: 183px;
+    border: 1px solid black;
+  }
+  #container #content #content-3 {
+    min-height: 75vh;
+  }
+  #container #content #content-3 #content3-h3tagone {
+    font-size: xx-large;
+    width: 90%;
+    text-align: center;
+  }
+  #container #content #content-4 {
+    min-height: 80vh;
+  }
+  #container #content #content-4 #content4-h3tagone {
+    font-size: xx-large;
+    width: 95%;
+    text-align: center;
+  }
+  #container #footer {
+    font-size: large;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -291,11 +344,8 @@
   }
 }
 
-@media only screen and (min-width: 1020px) {
+@media only screen and (min-width: 1300px) {
   #container #mobile-header {
-    display: none;
-  }
-  #container #content-1 {
     display: none;
   }
   #container #header {
@@ -334,91 +384,97 @@
     background-color: crimson;
   }
   #container #content {
-    -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: -ms-grid;
+    display: grid;
     width: 99%;
+    min-height: 80vh;
   }
-  #container #content #content-one {
+  #container #content #content-1, #container #content #content-2, #container #content #content-3, #container #content #content-4 {
     display: none;
   }
-  #container #content #content-two {
-    min-height: 170vh;
-    display: block;
-    position: relative;
-  }
-  #container #content #content-two h1 {
-    position: absolute;
-    top: 15vh;
-    left: 10vw;
-    color: #333;
-    font-family: "adobe-caslon-pro",serif;
-    font-style: normal;
-    font-size: 3em;
-  }
-  #container #content #content-two h4 {
-    position: absolute;
-    top: 26vh;
-    left: 14vw;
-    color: #333;
-    font-family: "adobe-caslon-pro",serif;
-    font-size: 1em;
-    font-style: italic;
-  }
-  #container #content #content-two .condenttwoimages {
+  #container #content .condenttwoimages {
     position: absolute;
     border: 3px solid black;
     width: 275px;
     height: 183px;
   }
-  #container #content #content-two #contenttwo-imageone {
-    left: 44vw;
-    top: 8vh;
+  #container #content #content-two {
+    min-height: 170vh;
+    display: block;
+    display: -ms-grid;
+    display: grid;
+    row-gap: 20vh;
   }
-  #container #content #content-two #contenttwo-imagetwo {
-    left: 69vw;
-    top: 8vh;
+  #container #content #content-two #content2-1 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(150px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    min-height: 70vh;
+    position: relative;
   }
-  #container #content #content-two #contenttwo-imagethree {
-    left: 44vw;
-    top: 38vh;
+  #container #content #content-two #content2-1 h1 {
+    color: #333;
+    font-family: "adobe-caslon-pro",serif;
+    font-style: normal;
+    font-size: 3em;
+    position: absolute;
+    top: 14vh;
+    left: 14vw;
   }
-  #container #content #content-two #contenttwo-imagefour {
-    left: 69vw;
-    top: 38vh;
+  #container #content #content-two #content2-1 h4 {
+    color: #333;
+    font-family: "adobe-caslon-pro",serif;
+    font-size: 1em;
+    font-style: italic;
+    position: absolute;
+    top: 24vh;
+    left: 18vw;
   }
-  #container #content #content-two #hrtag-one {
+  #container #content #content-two #content2-1 #hrtag-one, #container #content #content-two #content2-1 #hrtag-two {
     border-color: #8c6349;
     position: absolute;
+    top: 35vh;
+    width: 35%;
+    left: 8vw;
+  }
+  #container #content #content-two #content2-1 #hrtag-two {
+    top: 66vh;
+  }
+  #container #content #content-two #content2-1 #contenttwo-imageone {
+    position: absolute;
+    left: 53%;
+    top: 9vh;
+  }
+  #container #content #content-two #content2-1 #contenttwo-imagetwo {
+    position: absolute;
+    left: 75%;
+    top: 9vh;
+  }
+  #container #content #content-two #content2-1 #contenttwo-imagethree {
+    position: absolute;
+    left: 53%;
     top: 40vh;
-    left: 3vw;
-    width: 37%;
   }
-  #container #content #content-two #hrtag-two {
-    border-color: #8c6349;
+  #container #content #content-two #content2-1 #contenttwo-imagefour {
     position: absolute;
-    top: 65vh;
-    left: 3vw;
-    width: 37%;
+    left: 75%;
+    top: 40vh;
   }
-  #container #content #content-two #contenttwo-ptagone {
+  #container #content #content-two #content2-1 #contenttwo-ptagone {
     position: absolute;
-    top: 47vh;
-    left: 3vw;
+    top: 46vh;
+    left: 8vw;
     font-size: large;
     color: #8c6349;
     text-align: center;
     font-weight: bold;
   }
   #container #content #content-two #contenttwo-two {
-    width: 100%;
-    top: 80vh;
-    height: 36vh;
-    left: 0.25vw;
-    position: absolute;
+    position: relative;
+    min-height: 100vh;
   }
-  #container #content #content-two #contenttwo-two #contenttwo-imagefive {
-    position: absolute;
-    top: 0;
+  #container #content #content-two #contenttwo-two #contenttwo-imagefive, #container #content #content-two #contenttwo-two #contenttwo-imagesix {
     height: 35vh;
     width: 40%;
     border: 5px double black;
@@ -429,18 +485,10 @@
     left: 47%;
     font-style: oblique;
     font-weight: bolder;
-    top: 15vh;
+    top: 12vh;
   }
   #container #content #content-two #contenttwo-two #contenttwo-h3tagone #contenttwo-atagone {
     color: goldenrod;
-  }
-  #container #content #content-two #contenttwo-two #contenttwo-imagesix {
-    position: absolute;
-    top: 43vh;
-    height: 35vh;
-    width: 40%;
-    border: 5px double black;
-    left: 55%;
   }
   #container #content #content-two #contenttwo-two #contenttwo-h3tagtwo {
     position: absolute;
@@ -450,7 +498,7 @@
     font-style: oblique;
     font-weight: bolder;
   }
-  #container #content #content-two #contenttwo-two #contenttwo-h3tagtwo #contenttwo-atagone {
+  #container #content #content-two #contenttwo-two #contenttwo-h3tagtwo #contenttwo-atagtwo {
     position: absolute;
     left: 7vw;
     color: white;
@@ -460,8 +508,13 @@
     -webkit-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out;
   }
-  #container #content #content-two #contenttwo-two #contenttwo-h3tagtwo #contenttwo-atagone:hover {
+  #container #content #content-two #contenttwo-two #contenttwo-h3tagtwo #contenttwo-atagtwo:hover {
     background-color: crimson;
+  }
+  #container #content #content-two #contenttwo-two #contenttwo-imagesix {
+    position: absolute;
+    top: 60vh;
+    left: 47%;
   }
   #container #footer {
     justify-items: normal;

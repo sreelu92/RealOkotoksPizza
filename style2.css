@@ -72,12 +72,11 @@
   transition: all 0.5s ease-in-out;
   position: absolute;
   width: 100%;
-  background-color: burlywood;
   display: -ms-grid;
   display: grid;
   top: -19vh;
   opacity: 0;
-  left: 0;
+  left: 30vw;
   min-height: 19vh;
   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTaqkheI1eHco59pIjVVJ_ScUJ08H9L6hf4-w&usqp=CAU);
 }
@@ -131,15 +130,16 @@
   display: grid;
   min-height: 75vh;
   width: 100%;
-  row-gap: 3vh;
+  row-gap: 5vh;
 }
 
 #container #content #heading {
   font-size: larger;
   text-align: center;
-  background-color: tan;
+  background-color: burlywood;
   color: black;
   font-weight: bolder;
+  background-image: url(https://thumbs.dreamstime.com/t/texture-oak-veneer-natural-background-extremely-high-resolution-photo-texture-oak-veneer-natural-background-110616367.jpg);
 }
 
 #container #content #content-one {
@@ -165,6 +165,21 @@
   color: white;
   background-color: darkred;
   padding: 4px;
+}
+
+#container #content #discount {
+  min-height: 4vh;
+}
+
+#container #content #discount p {
+  text-align: center;
+  background-image: url(https://thumbs.dreamstime.com/t/texture-oak-veneer-natural-background-extremely-high-resolution-photo-texture-oak-veneer-natural-background-110616367.jpg);
+  margin-left: 6vw;
+  margin-right: 6vw;
+  font-size: large;
+  font-weight: bold;
+  color: #333;
+  font-family: "adobe-caslon-pro",serif;
 }
 
 #container #content #content-two {
@@ -377,13 +392,17 @@
     text-decoration: none;
     background-color: darkred;
     color: white;
-    padding: 5px;
+    padding: 10px;
     font-size: medium;
   }
   #container #content {
     display: -ms-grid;
     display: grid;
     row-gap: 5vh;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
   }
   #container #content #heading {
     font-size: xx-large;
@@ -395,6 +414,15 @@
   #container #content #content-one #contentone-atagone, #container #content #content-one #contentone-atagtwo {
     padding: 10px;
     font-size: x-large;
+  }
+  #container #content #discount {
+    min-height: 9vh;
+  }
+  #container #content #discount p {
+    font-size: 2em;
+    font-style: italic;
+    margin-left: 8vw;
+    margin-right: 8vw;
   }
   #container #content #content-two {
     min-height: 480vh;
@@ -478,10 +506,14 @@
     row-gap: 7vh;
     width: 90%;
     margin-left: 5%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
   }
   #container #content #heading {
-    margin-left: 8vw;
-    margin-right: 8vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
     color: #333;
   }
   #container #content #content-one h3 {
@@ -506,6 +538,15 @@
   #container #content #content-one #contentone-atagtwo:hover {
     background-color: crimson;
   }
+  #container #content #discount {
+    min-height: 9vh;
+  }
+  #container #content #discount p {
+    margin-left: 20vw;
+    margin-right: 20vw;
+    font-size: 2em;
+    font-weight: bolder;
+  }
   #container #content #content-two #content2-1 .content-image, #container #content #content-two #content2-2 .content-image, #container #content #content-two #content2-3 .content-image, #container #content #content-two #content2-4 .content-image, #container #content #content-two #content2-5 .content-image, #container #content #content-two #content2-6 .content-image, #container #content #content-two #content2-7 .content-image, #container #content #content-two #content2-8 .content-image, #container #content #content-two #content2-9 .content-image,
   #container #content #content-two #content2-10 .content-image, #container #content #content-two #content2-11 .content-image, #container #content #content-two #content2-12 .content-image, #container #content #content-two #content2-13 .content-image, #container #content #content-two #content2-14 .content-image, #container #content #content-two #content2-15 .content-image, #container #content #content-two #content2-16 .content-image, #container #content #content-two #content2-17 .content-image,
   #container #content #content-two #content2-18 .content-image, #container #content #content-two #content2-19 .content-image, #container #content #content-two #content2-20 .content-image, #container #content #content-two #content2-21 .content-image, #container #content #content-two #content2-22 .content-image, #container #content #content-two #content2-23 .content-image, #container #content #content-two #content2-24 .content-image {
@@ -517,6 +558,11 @@
   #container #content #content-two #content2-18 .content-image:hover, #container #content #content-two #content2-19 .content-image:hover, #container #content #content-two #content2-20 .content-image:hover, #container #content #content-two #content2-21 .content-image:hover, #container #content #content-two #content2-22 .content-image:hover, #container #content #content-two #content2-23 .content-image:hover, #container #content #content-two #content2-24 .content-image:hover {
     width: 270px;
     height: 270px;
+  }
+  #container #content #content-two #content2-1 .content-ptag, #container #content #content-two #content2-2 .content-ptag, #container #content #content-two #content2-3 .content-ptag, #container #content #content-two #content2-4 .content-ptag, #container #content #content-two #content2-5 .content-ptag, #container #content #content-two #content2-6 .content-ptag, #container #content #content-two #content2-7 .content-ptag, #container #content #content-two #content2-8 .content-ptag, #container #content #content-two #content2-9 .content-ptag,
+  #container #content #content-two #content2-10 .content-ptag, #container #content #content-two #content2-11 .content-ptag, #container #content #content-two #content2-12 .content-ptag, #container #content #content-two #content2-13 .content-ptag, #container #content #content-two #content2-14 .content-ptag, #container #content #content-two #content2-15 .content-ptag, #container #content #content-two #content2-16 .content-ptag, #container #content #content-two #content2-17 .content-ptag,
+  #container #content #content-two #content2-18 .content-ptag, #container #content #content-two #content2-19 .content-ptag, #container #content #content-two #content2-20 .content-ptag, #container #content #content-two #content2-21 .content-ptag, #container #content #content-two #content2-22 .content-ptag, #container #content #content-two #content2-23 .content-ptag, #container #content #content-two #content2-24 .content-ptag {
+    text-align: center;
   }
   #container #content #content-two #content2-1 #atag-1 .content-atag, #container #content #content-two #content2-1 #atag-2 .content-atag, #container #content #content-two #content2-1 #atag-3 .content-atag, #container #content #content-two #content2-1 #atag-4 .content-atag, #container #content #content-two #content2-1 #atag-5 .content-atag, #container #content #content-two #content2-1 #atag-6 .content-atag, #container #content #content-two #content2-1 #atag-7 .content-atag, #container #content #content-two #content2-1 #atag-8 .content-atag, #container #content #content-two #content2-1 #atag-9 .content-atag, #container #content #content-two #content2-1 #atag-10 .content-atag, #container #content #content-two #content2-1 #atag-11 .content-atag, #container #content #content-two #content2-1 #atag-12 .content-atag, #container #content #content-two #content2-1 #atag-13 .content-atag,
   #container #content #content-two #content2-1 #atag-14 .content-atag, #container #content #content-two #content2-1 #atag-15 .content-atag, #container #content #content-two #content2-1 #atag-16 .content-atag, #container #content #content-two #content2-1 #atag-17 .content-atag, #container #content #content-two #content2-1 #atag-18 .content-atag, #container #content #content-two #content2-1 #atag-19 .content-atag, #container #content #content-two #content2-1 #atag-20 .content-atag, #container #content #content-two #content2-1 #atag-21 .content-atag, #container #content #content-two #content2-1 #atag-22 .content-atag, #container #content #content-two #content2-1 #atag-23 .content-atag, #container #content #content-two #content2-1 #atag-24 .content-atag, #container #content #content-two #content2-2 #atag-1 .content-atag, #container #content #content-two #content2-2 #atag-2 .content-atag, #container #content #content-two #content2-2 #atag-3 .content-atag, #container #content #content-two #content2-2 #atag-4 .content-atag, #container #content #content-two #content2-2 #atag-5 .content-atag, #container #content #content-two #content2-2 #atag-6 .content-atag, #container #content #content-two #content2-2 #atag-7 .content-atag, #container #content #content-two #content2-2 #atag-8 .content-atag, #container #content #content-two #content2-2 #atag-9 .content-atag, #container #content #content-two #content2-2 #atag-10 .content-atag, #container #content #content-two #content2-2 #atag-11 .content-atag, #container #content #content-two #content2-2 #atag-12 .content-atag, #container #content #content-two #content2-2 #atag-13 .content-atag,
