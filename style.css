@@ -71,7 +71,6 @@
   transition: all 0.5s ease-in-out;
   position: absolute;
   width: 100%;
-  background-color: burlywood;
   display: -ms-grid;
   display: grid;
   top: -19vh;
@@ -228,7 +227,7 @@
 }
 
 #container #content #content-4 #content4-h3tagone {
-  color: #333;
+  color: black;
   font-style: oblique;
   font-weight: bolder;
   font-size: small;
@@ -527,6 +526,9 @@
   #container #footer #footerdiv-one a img:hover {
     width: 32px;
     height: 32px;
+  }
+  #container #footer #footerh5-two {
+    margin-left: 10vw;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -136,7 +136,6 @@
 #container #content #heading {
   font-size: larger;
   text-align: center;
-  background-color: burlywood;
   color: black;
   font-weight: bolder;
   background-image: url(https://thumbs.dreamstime.com/t/texture-oak-veneer-natural-background-extremely-high-resolution-photo-texture-oak-veneer-natural-background-110616367.jpg);
@@ -180,6 +179,7 @@
   font-weight: bold;
   color: #333;
   font-family: "adobe-caslon-pro",serif;
+  font-style: italic;
 }
 
 #container #content #content-two {
@@ -420,7 +420,6 @@
   }
   #container #content #discount p {
     font-size: 2em;
-    font-style: italic;
     margin-left: 8vw;
     margin-right: 8vw;
   }
@@ -722,6 +721,9 @@
   #container #footer #footerdiv-one a img:hover {
     width: 32px;
     height: 32px;
+  }
+  #container #footer #footerh5-two {
+    margin-left: 10vw;
   }
 }
 /*# sourceMappingURL=style2.css.map */

@@ -1,4 +1,5 @@
 @import '_mixins';
+@import '_variables';
 * {
     margin: 0;
     padding: 0;
@@ -51,14 +52,13 @@
                 .hamburger-line {
                     width: 30px;
                     height: 4px;
-                    background-color: black;
+                    background-color: $font-color1;
                 }
             }
             #mobile-header-menu {
                 transition: all 0.5s ease-in-out;
                 position: absolute;
                 width: 100%;
-                background-color: burlywood;
                 display: grid;
                 top:-19vh;
                 opacity: 0;
@@ -66,7 +66,7 @@
                 min-height: 19vh;
                 background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTaqkheI1eHco59pIjVVJ_ScUJ08H9L6hf4-w&usqp=CAU);
                 a {
-                    color:black;
+                    color:$font-color1;
                     text-decoration: none;
                     font-weight: bold;
 
@@ -104,7 +104,7 @@
             display: none;
         }
         a{
-            color: black;
+            color: $font-color1;
             font-weight: bolder;
             font-size:smaller;
             transition: font-size 0.25s ease-in-out;
@@ -125,7 +125,7 @@
             row-gap: 4vh;
             height: 34vh;
             #content-h4tag1 {
-                color: #8c6349;
+                color: $font-color3;
                 font-size:xx-large ;
                 font-family: 'Crimson Text', serif; 
 
@@ -133,7 +133,7 @@
             }
             #content-h5tag1 {
                 text-align: center;
-                color:#333;
+                color:$font-color2;
                 width:80%;
             }
             #hrtag-one, #hrtag-two {
@@ -146,11 +146,11 @@
             grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
             #content2-1,#content2-2 {
                 h5 {
-                    color: #333;
+                    color: $font-color2;
                     a {
                         text-decoration: none;
                         margin-left: 2vw;
-                        color: black;
+                        color: $font-color1;
                     }
 
                    
@@ -160,7 +160,7 @@
                 h4 {
                     a {
                         text-decoration: none;
-                        color:#333;
+                        color:$font-color2;
                     }
                 }
             }
@@ -170,7 +170,7 @@
            min-height:90vh;
             
             h4 {
-                color: #8c6349;
+                color: $font-color3;
                 font-size:xx-large ;
                 font-family: 'Crimson Text', serif; 
                 text-align: center;
@@ -186,8 +186,8 @@
                 img {
                     width:140px;
                     height: 137px;
-                    border: 2px solid #333;
-                    box-shadow: 5px 5px 7px grey;
+                    border: 2px solid $font-color2;
+                    box-shadow: 5px 5px 7px $font-color8;
                     
                 }
             }
@@ -222,8 +222,8 @@
             align-items: center;
             a {
                 text-decoration: none;
-                background-color: darkred;
-                color: white;
+                background-color: $font-color5;
+                color: $font-color6;
                 padding: 10px;
                 font-size: medium;
             }
@@ -326,13 +326,13 @@
             }
             a {
                 font-size: large;
-                color: white;
+                color: $font-color6;
                 text-decoration: none;
-                background-color: darkred;
+                background-color: $font-color5;
                 padding: 1vh;
                 transition: all 0.25s ease-in-out;
                 &:hover {
-                    background-color: crimson;
+                    background-color: $font-color7;
                 }
             }
           
@@ -407,6 +407,10 @@
                     }
                 }
             }
+            #footerh5-two {
+                margin-left: 10vw;
+            }   
+            
                 
         } 
 

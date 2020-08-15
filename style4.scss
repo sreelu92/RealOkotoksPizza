@@ -1,4 +1,5 @@
 @import '_mixins';
+@import '_variables';
 * {
     margin: 0;
     padding: 0;
@@ -51,14 +52,13 @@
                 .hamburger-line {
                     width: 30px;
                     height: 4px;
-                    background-color: black;
+                    background-color: $font-color1;
                 }
             }
             #mobile-header-menu {
                 transition: all 0.5s ease-in-out;
                 position: absolute;
                 width: 100%;
-                background-color: burlywood;
                 display: grid;
                 top:-19vh;
                 opacity: 0;
@@ -66,7 +66,7 @@
                 min-height: 19vh;
                 background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTaqkheI1eHco59pIjVVJ_ScUJ08H9L6hf4-w&usqp=CAU);
                 a {
-                    color:black;
+                    color:$font-color1;
                     text-decoration: none;
                     font-weight: bold;
 
@@ -104,7 +104,7 @@
             display: none;
         }
         a{
-            color: black;
+            color: $font-color1;
             font-weight: bolder;
             font-size:smaller;
             transition: font-size 0.25s ease-in-out;
@@ -127,7 +127,7 @@
             #content-h3tag1 {
                 top:10vh;
                 font-size: xx-large;
-                color:#333;
+                color:$font-color2;
                 font-family: 'Crimson Text', serif; 
 
             }
@@ -135,12 +135,12 @@
                 width:70%;
             }
             h4 {
-                color: #8c6349;
+                color: $font-color3;
                 font-family: 'Crimson Text', serif; 
                 font-size:large ;
             }
             #ptag-one,#ptag-one,#ptag-one {
-                color:#333;
+                color:$font-color2;
 
             }
         }
@@ -152,7 +152,7 @@
 
             h4 {
                 text-align: center;
-                color: #8c6349;
+                color: $font-color3;
                 font-family: 'Crimson Text', serif; 
                 font-size:large ;
 
@@ -193,8 +193,8 @@
             align-items: center;
             a {
                 text-decoration: none;
-                background-color: darkred;
-                color: white;
+                background-color: $font-color5;
+                color: $font-color6;
                 padding: 10px;
                 font-size: medium;
             }
@@ -215,7 +215,7 @@
                     font-size:2em;
                 }
                 #ptag-one,#ptag-two,#ptag-three {
-                    color:#333;
+                    color:$font-color2;
                     font-size: x-large;
 
                 }
@@ -278,13 +278,13 @@
             }
             a {
                 font-size: large;
-                color: white;
+                color: $font-color6;
                 text-decoration: none;
-                background-color: darkred;
+                background-color: $font-color5;
                 padding: 1vh;
                 transition: all 0.25s ease-in-out;
                 &:hover {
-                    background-color: crimson;
+                    background-color: $font-color7;
                 }
             }
           
@@ -347,6 +347,9 @@
                     }
                 }
             }
+            #footerh5-two {
+                margin-left: 10vw;
+            }  
                 
         } 
     }

@@ -1,4 +1,5 @@
 @import '_mixins';
+@import '_variables';
 * {
     margin: 0;
     padding: 0;
@@ -51,7 +52,7 @@
                 .hamburger-line {
                     width: 30px;
                     height: 4px;
-                    background-color: black;
+                    background-color: $font-color1;
                 }
             }
             #mobile-header-menu {
@@ -65,7 +66,7 @@
                 min-height: 19vh;
                 background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTaqkheI1eHco59pIjVVJ_ScUJ08H9L6hf4-w&usqp=CAU);
                 a {
-                    color:black;
+                    color: $font-color1;
                     text-decoration: none;
                     font-weight: bold;
 
@@ -103,7 +104,7 @@
             display: none;
         }
         a{
-            color: black;
+            color:  $font-color1;
             font-weight: bolder;
             font-size:smaller;
             transition: font-size 0.25s ease-in-out;
@@ -120,8 +121,7 @@
         #heading {
             font-size: larger;
             text-align: center;
-            background-color: burlywood;
-            color: black;
+            color:  $font-color1;
             font-weight: bolder;
             background-image: url(https://thumbs.dreamstime.com/t/texture-oak-veneer-natural-background-extremely-high-resolution-photo-texture-oak-veneer-natural-background-110616367.jpg);
 
@@ -135,14 +135,14 @@
            
             #contentone-atagone {
                 text-decoration: none;
-                color: white;
-                background-color: darkred;
+                color: $font-color6;
+                background-color: $font-color5;
                 padding: 2px;
             }
             #contentone-atagtwo {
                 text-decoration: none;
-                color: white;
-                background-color: darkred;
+                color: $font-color6;
+                background-color: $font-color5;
                 padding: 4px;
             }
         }
@@ -156,8 +156,9 @@
                 margin-right: 6vw;
                 font-size: large;
                 font-weight: bold;
-                color: #333;
-                font-family:"adobe-caslon-pro",serif;         
+                color: $font-color2;
+                font-family:"adobe-caslon-pro",serif;       
+                font-style: italic;  
             }
             
         }
@@ -170,7 +171,7 @@
             .content-image {
                 width:108px;
                 height: 108px;
-                box-shadow: 7px 7px 7px grey;
+                box-shadow: 7px 7px 7px $font-color8;
             }
             #content2-1,#content2-2,#content2-3,#content2-4,#content2-5,#content2-6,#content2-7,#content2-8,#content2-9,
              #content2-10,#content2-11,#content2-12,#content2-13,#content2-14,#content2-15,#content2-16,#content2-17,
@@ -217,8 +218,8 @@
             align-items: center;
             a {
                 text-decoration: none;
-                background-color: darkred;
-                color: white;
+                background-color: $font-color5;
+                color: $font-color6;
                 padding: 10px;
                 font-size: medium;
             }
@@ -247,7 +248,6 @@
                 p {
                    
                     font-size:2em;   
-                    font-style: italic; 
                     margin-left: 8vw; 
                     margin-right:8vw ;   
                 }
@@ -260,7 +260,7 @@
                 .content-image {
                     width:240px;
                     height: 240px;
-                    box-shadow: 7px 7px 7px grey;
+                    box-shadow: 7px 7px 7px $font-color8;
                 }
                 .h4tag {
                     font-size:xx-large;
@@ -322,13 +322,13 @@
             }
             a {
                 font-size: large;
-                color: white;
+                color: $font-color6;
                 text-decoration: none;
-                background-color: darkred;
+                background-color: $font-color5;
                 padding: 1vh;
                 transition: all 0.25s ease-in-out;
                 &:hover {
-                    background-color: crimson;
+                    background-color: $font-color7;
                 }
             }
           
@@ -343,7 +343,7 @@
             #heading {
                 margin-left: 10vw;
                 margin-right: 10vw;
-                color: #333;
+                color: $font-color2;
 
             }
             #content-one {
@@ -415,6 +415,9 @@
                     }
                 }
             }
+            #footerh5-two {
+                margin-left: 10vw;
+            }  
                 
         } 
 

@@ -1,3 +1,4 @@
+@import "_variables";
 * {
     margin: 0;
     padding: 0;
@@ -49,14 +50,13 @@
                 .hamburger-line {
                     width: 30px;
                     height: 3px;
-                    background-color: black;
+                    background-color:$font-color1;
                 }
             }
             #mobile-header-menu {
                 transition: all 0.5s ease-in-out;
                 position: absolute;
                 width: 100%;
-                background-color: burlywood;
                 display: grid;
                 top:-19vh;
                 opacity: 0;
@@ -64,7 +64,7 @@
                 min-height: 19vh;
                 background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTaqkheI1eHco59pIjVVJ_ScUJ08H9L6hf4-w&usqp=CAU);
                 a {
-                    color:black;
+                    color:$font-color1;
                     text-decoration: none;
                     font-weight: bold;
 
@@ -100,7 +100,7 @@
             display: none;
         }
         a{
-            color: black;
+            color: $font-color1;
             font-weight: bolder;
             font-size:smaller;
             transition: font-size 0.25s ease-in-out;
@@ -121,7 +121,7 @@
         #content-1 {
             min-height: 6vh;
                 h2,h4 {
-                    color: #333;
+                    color: $font-color2;
                     font-family:"adobe-caslon-pro",serif;
                     font-style: normal;
                     font-size: xx-large;
@@ -143,7 +143,7 @@
                 }
                 h3 {
                    
-                    color:#8c6349 ;
+                    color:$font-color3 ;
                     font-size: small;
                     margin-top: 2.5vh;
                     width: 60%;
@@ -161,7 +161,7 @@
             row-gap: 2vh;
             .condent2-images {
                 width:60%;
-                border: 1px solid black;
+                border: 1px solid $font-color1;
             }
         }
         #content-3 {
@@ -170,19 +170,19 @@
             align-items: center;
             min-height: 60vh;
             #content3-h3tagone {
-                color: #333; 
+                color: $font-color2; 
                 font-style: oblique;
                 font-weight: bolder;
                 font-size: small;
                 width: 95%;
                 text-align: center;
                 #content3-atagone{
-                    color: goldenrod;
+                    color: $font-color4;
                 }
             }
             #content3-img1 {
                 width: 80%;
-                border: 4px double black;
+                border: 4px double $font-color1;
             }
         }
         #content-4 {
@@ -191,27 +191,27 @@
             align-items: center;
             min-height: 60vh;
             #content4-h3tagone {
-                color: #333; 
+                color: $font-color1; 
                 font-style: oblique;
                 font-weight: bolder;
                 font-size: small;
                 width: 95%;
                 text-align: center;
                 #content4-atagone {
-                            color:white;
-                            background-color:darkred;
+                            color:$font-color6;
+                            background-color:$font-color5;
                             padding: 3vh;
                             text-decoration: none;
                             transition: all 0.25s ease-in-out;
                             &:hover {
-                                background-color: crimson;
+                                background-color: $font-color7;
                             }
                 }
                
             }
             #content4-img2 {
                 width: 80%;
-                border: 4px double black;
+                border: 4px double $font-color1;
 
             }
         }
@@ -245,8 +245,8 @@
             align-items: center;
             a {
                 text-decoration: none;
-                background-color: darkred;
-                color: white;
+                background-color: $font-color5;
+                color: $font-color6;
                 padding: 10px;
                 font-size: medium;
             }
@@ -272,7 +272,7 @@
                 .condent2-images {
                    width:275px;
                    height: 183px;
-                    border: 1px solid black;
+                    border: 1px solid $font-color1;
                 }
             }
             #content-3 {
@@ -340,13 +340,13 @@
             }
             a {
                 font-size: large;
-                color: white;
+                color: $font-color6;
                 text-decoration: none;
-                background-color: darkred;
+                background-color: $font-color5;
                 padding: 1vh;
                 transition: all 0.25s ease-in-out;
                 &:hover {
-                    background-color: crimson;
+                    background-color: $font-color7;
                 }
             }
           
@@ -361,7 +361,7 @@
             }
             .condenttwoimages{
                 position: absolute;
-                border: 3px solid black;
+                border: 3px solid $font-color1;
                 width: 275px;
                 height: 183px;
             }
@@ -376,7 +376,7 @@
                     min-height: 70vh;
                     position: relative;
                     h1 {
-                    color: #333;
+                    color: $font-color2;
                     font-family:"adobe-caslon-pro",serif;
                     font-style: normal;
                     font-size: 3em;
@@ -385,7 +385,7 @@
                     left:14vw;
                     }
                     h4 {
-                        color: #333;
+                        color: $font-color2;
                         font-family:"adobe-caslon-pro",serif;
                         font-size: 1em;
                         font-style: italic; 
@@ -394,7 +394,7 @@
                         left: 18vw;
                     }
                     #hrtag-one,#hrtag-two {
-                        border-color: #8c6349;
+                        border-color: $font-color3;
                         position: absolute;
                         top:35vh;
                         width: 35%;
@@ -434,7 +434,7 @@
                         top:46vh ;
                         left: 8vw;
                         font-size: large;
-                        color:#8c6349 ;
+                        color:$font-color3 ;
                         text-align: center;
                         font-weight: bold;
 
@@ -446,17 +446,17 @@
                     #contenttwo-imagefive,#contenttwo-imagesix {
                         height: 35vh;
                         width: 40%;
-                        border: 5px double black;
+                        border: 5px double $font-color1;
                     }
                     #contenttwo-h3tagone {
-                        color: #333; 
+                        color: $font-color2; 
                         position: absolute;
                         left:47%;
                         font-style: oblique;
                         font-weight: bolder;
                         top:12vh;
                         #contenttwo-atagone {
-                            color: goldenrod;
+                            color: $font-color4;
                         }  
 
                     }
@@ -464,19 +464,19 @@
                         position: absolute;
                         left: 5vw;
                         top:60vh ;
-                        color: #333; 
+                        color: $font-color2; 
                         font-style: oblique;
                         font-weight: bolder;
                         #contenttwo-atagtwo {
                             position: absolute;
                             left: 7vw;
-                            color:white;
-                            background-color:darkred;
+                            color:$font-color6;
+                            background-color:$font-color5;
                             padding: 3vh;
                             text-decoration: none;
                             transition: all 0.25s ease-in-out;
                             &:hover {
-                                background-color: crimson;
+                                background-color: $font-color7;
                             }
                         }
                      
@@ -504,7 +504,9 @@
                     }
                 }
             }
-                
+            #footerh5-two {
+                margin-left: 10vw;
+            }                
         } 
     }
    
