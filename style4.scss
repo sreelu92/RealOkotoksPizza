@@ -123,7 +123,7 @@
             justify-items: center;
             align-items: center;
             row-gap: 3vh;
-            height: 40vh;
+            min-height: 40vh;
             #content-h3tag1 {
                 top:10vh;
                 font-size: xx-large;
@@ -148,7 +148,7 @@
             display: grid;
             justify-items: center;
             align-items: center;
-            height: 40vh;
+            min-height: 40vh;
 
             h4 {
                 text-align: center;

@@ -187,8 +187,10 @@
   display: grid;
   -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  min-height: 930vh;
+  min-height: 90vh;
   row-gap: 4vh;
+  -webkit-column-gap: 4vw;
+          column-gap: 4vw;
 }
 
 #container #content #content-two .content-image {
@@ -424,11 +426,9 @@
     margin-right: 8vw;
   }
   #container #content #content-two {
-    min-height: 480vh;
+    min-height: 90vh;
     -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    -webkit-column-gap: 4vw;
-            column-gap: 4vw;
   }
   #container #content #content-two .content-image {
     width: 240px;

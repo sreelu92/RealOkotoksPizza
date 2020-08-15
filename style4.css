@@ -142,7 +142,7 @@
       -ms-flex-align: center;
           align-items: center;
   row-gap: 3vh;
-  height: 40vh;
+  min-height: 40vh;
 }
 
 #container #content #content-1 #content-h3tag1 {
@@ -173,7 +173,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 40vh;
+  min-height: 40vh;
 }
 
 #container #content #content-2 h4 {
