@@ -11,6 +11,7 @@
 }
 
 #container #mobile-header {
+  position: fixed;
   display: -ms-grid;
   display: grid;
   justify-items: center;
@@ -125,6 +126,7 @@
 
 #container #content {
   width: 99%;
+  margin-top: 25vh;
   min-height: 60vh;
   display: -ms-grid;
   display: grid;
@@ -269,6 +271,7 @@
   }
   #container #header {
     height: 25vh;
+    position: fixed;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (minmax(40px, 1fr))[auto-fit];
@@ -294,6 +297,9 @@
     padding: 10px;
     font-size: medium;
   }
+  #container #content {
+    margin-top: 21vh;
+  }
   #container #content #content-two {
     display: none;
   }
@@ -315,7 +321,7 @@
     min-height: 75vh;
   }
   #container #content #content-3 #content3-h3tagone {
-    font-size: xx-large;
+    font-size: x-large;
     width: 90%;
     text-align: center;
   }
@@ -323,7 +329,7 @@
     min-height: 80vh;
   }
   #container #content #content-4 #content4-h3tagone {
-    font-size: xx-large;
+    font-size: x-large;
     width: 95%;
     text-align: center;
   }

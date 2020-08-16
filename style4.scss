@@ -11,6 +11,7 @@
     min-height: 70vh;
     #mobile-header {
         display: grid;
+        position: fixed;
         justify-items: center;
         align-items: center;
         grid-template-columns: 2fr 4fr 2fr;
@@ -118,6 +119,7 @@
         width: 95%;
         margin-left: 2.5%;
         row-gap: 3vh;
+        margin-top: 22vh;
         #content-1 {
             display: grid;
             justify-items: center;
@@ -178,6 +180,7 @@
         }
         #header{
             height:25vh;
+            position: fixed;
             h3 {
                 font-size:x-large ;
                 #pizza-logo {
@@ -200,7 +203,7 @@
             }
         }
         #content {
-            
+            margin-top: 15vh;
             #content-1 {
                 
                 #content-h3tag1 {

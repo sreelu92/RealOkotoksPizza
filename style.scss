@@ -8,6 +8,7 @@
     row-gap: 5vh;
     background-image: url(https://www.lefthudson.com/wp-content/uploads/2019/11/white-background-wallpaper-awesome-white-wallpapers-in-hd-barbaras-hd-wallpapers-ideas-of-white-background-wallpaper.jpg);
     #mobile-header {
+        position: fixed;
         display: grid;
         justify-items: center;
         align-items: center;
@@ -81,7 +82,6 @@
         grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
         width: 100%;
         height:20vh;
-        
         background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTaqkheI1eHco59pIjVVJ_ScUJ08H9L6hf4-w&usqp=CAU);
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
@@ -110,7 +110,7 @@
     }
     #content {
         width: 99%;
-        
+        margin-top: 25vh;
         min-height: 60vh;
       
         display: grid;
@@ -222,6 +222,7 @@
         background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTaqkheI1eHco59pIjVVJ_ScUJ08H9L6hf4-w&usqp=CAU);
         display: grid;
         grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+        
    }
     @media only screen and(min-width:600px)
     {
@@ -230,6 +231,7 @@
         }
         #header{
             height:25vh;
+            position: fixed;
             h3 {
                 font-size:x-large ;
                 #pizza-logo {
@@ -252,7 +254,7 @@
             }
         }
         #content {
-           
+           margin-top: 21vh;
             #content-two {
                 display: none;
             }
@@ -278,7 +280,7 @@
             #content-3 {
                 min-height: 75vh;
                 #content3-h3tagone {
-                    font-size: xx-large;
+                    font-size: x-large;
                     width:90%;
                     text-align: center;
                 }
@@ -287,7 +289,7 @@
             #content-4 {
                 min-height: 80vh;
                 #content4-h3tagone {
-                    font-size: xx-large;
+                    font-size: x-large;
                     width: 95%;
                     text-align: center;
                 }
@@ -321,6 +323,7 @@
             align-items: center;
             justify-items: center;
             width: 100%;
+            
           
             h3 {
                 display: none;

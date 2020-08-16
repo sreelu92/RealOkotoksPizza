@@ -11,6 +11,7 @@
     min-height: 70vh;
     #mobile-header {
         display: grid;
+        position: fixed;
         justify-items: center;
         align-items: center;
         grid-template-columns: 2fr 4fr 2fr;
@@ -119,6 +120,7 @@
         display: grid;
         justify-items: center;
         align-items: center;
+        margin-top: 22vh;
         #content-2 {
             display: grid;
             justify-items: center;
@@ -128,6 +130,9 @@
                 color:$font-color2;
                 font-family: 'Quattrocento', serif;
                 text-align: center;
+            }
+            hr {
+                width:90%;
             }
         }        
     }
@@ -145,6 +150,7 @@
         }
         #header{
             height:25vh;
+            position: fixed;
             h3 {
                 font-size:x-large ;
                 #pizza-logo {
@@ -168,6 +174,7 @@
         }
         #content {
             min-height: 80vh;
+            margin-top: 15vh;
             #content-1 {
                 width:100%;
                 iframe {
@@ -265,7 +272,7 @@
                 }
             }
             #content-2 {
-                row-gap: 4vh;
+                row-gap: 5vh;
                 #content2-h2tag  {
                     font-size: xx-large;
                     

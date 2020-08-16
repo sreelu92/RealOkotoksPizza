@@ -14,6 +14,7 @@
 #container #mobile-header {
   display: -ms-grid;
   display: grid;
+  position: fixed;
   justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -135,6 +136,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 22vh;
 }
 
 #container #content #content-2 {
@@ -153,6 +155,10 @@
   text-align: center;
 }
 
+#container #content #content-2 hr {
+  width: 90%;
+}
+
 #container #footer {
   width: 100%;
   min-height: 12vh;
@@ -169,6 +175,7 @@
   }
   #container #header {
     height: 25vh;
+    position: fixed;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (minmax(40px, 1fr))[auto-fit];
@@ -196,6 +203,7 @@
   }
   #container #content {
     min-height: 80vh;
+    margin-top: 15vh;
   }
   #container #content #content-1 {
     width: 100%;
@@ -283,7 +291,7 @@
     height: 60vh;
   }
   #container #content #content-2 {
-    row-gap: 4vh;
+    row-gap: 5vh;
     font-weight: bolder;
   }
   #container #content #content-2 #content2-h2tag {

@@ -14,6 +14,7 @@
 #container #mobile-header {
   display: -ms-grid;
   display: grid;
+  position: fixed;
   justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -132,6 +133,7 @@
   width: 95%;
   margin-left: 2.5%;
   row-gap: 4vh;
+  margin-top: 22vh;
 }
 
 #container #content #content-1 {
@@ -236,6 +238,7 @@
   }
   #container #header {
     height: 25vh;
+    position: fixed;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (minmax(40px, 1fr))[auto-fit];
@@ -265,6 +268,7 @@
     min-height: 300vh;
     width: 95%;
     row-gap: 3vh;
+    margin-top: 10vh;
   }
   #container #content #content-1 {
     row-gap: 4vh;
