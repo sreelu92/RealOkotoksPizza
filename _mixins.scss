@@ -55,3 +55,23 @@
     min-height: 19vh;
     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTaqkheI1eHco59pIjVVJ_ScUJ08H9L6hf4-w&usqp=CAU);
 }
+@mixin hamburgercontainerStyle() {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    z-index: 4;
+    position: relative;
+    
+}
+
+@mixin checkboxStyle() {
+    
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    opacity: 0;
+    z-index: 5;
+    
+}

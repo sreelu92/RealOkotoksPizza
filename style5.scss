@@ -25,11 +25,8 @@
         }
         #hamburger-menu {
             #mobile-checkbox {
-                width: 50px;
-                height: 50px;
-                position: absolute;
-                opacity: 0;
-                z-index: 5;
+                @include  checkboxStyle();
+
             }
             #mobile-checkbox:checked ~ #mobile-header-menu {
                 top: 0;
@@ -37,13 +34,7 @@
                 transition: all 0.5s ease-in-out;
             }
             #hamburger-container {
-                display: grid;
-                justify-items: center;
-                align-items: center;
-                width: 50px;
-                height: 50px;
-                z-index: 4;
-                position: relative;
+                @include  hamburgercontainerStyle();
                 .hamburger-line {
                     width: 30px;
                     height: 4px;
