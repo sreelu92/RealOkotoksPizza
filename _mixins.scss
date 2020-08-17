@@ -14,7 +14,11 @@
     &:hover {
         background-color: crimson;
     }
+}
 
-
-
+@mixin footerProperty {
+    font-size:large;
+    align-items: center;
+    justify-items: center;
+    height: 10vh;
 }

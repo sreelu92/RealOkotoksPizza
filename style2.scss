@@ -79,18 +79,8 @@
    
   
    #header {
-        display: grid;
-        display: none;
-        grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-        width: 100%;
-        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTaqkheI1eHco59pIjVVJ_ScUJ08H9L6hf4-w&usqp=CAU);
-       
+        display: none;       
         h3 {
-            font-size: larger;
-            text-align: center;
-            position: relative;
-            font-weight: bolder;
-            font-family: 'Source Serif Pro', serif;
             #pizza-logo {
                 position: absolute;
                 top:0;
@@ -102,13 +92,7 @@
         #pizza-logo-two {
             display: none;
         }
-        a{
-            color:  $font-color1;
-            font-weight: bolder;
-            font-size:smaller;
-            transition: font-size 0.25s ease-in-out;
-            text-decoration: none;
-        }
+      
         
     }
     #content {
@@ -211,8 +195,13 @@
         #header{
             height:25vh;
             position: fixed;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTaqkheI1eHco59pIjVVJ_ScUJ08H9L6hf4-w&usqp=CAU);
             h3 {
                 font-size:x-large ;
+                text-align: center;
+                position: relative;
+                font-weight: bolder;
+                font-family: 'Source Serif Pro', serif;
                 #pizza-logo {
                     width:27%;
                     margin-top: 2.5vh;
@@ -224,11 +213,14 @@
             font-size: larger;
             justify-items: center;
             align-items: center;
+            width: 100%;
             a {
                 text-decoration: none;
                 color: $font-color5;
                 padding: 10px;
                 font-size: x-large;
+                font-weight: bolder;
+            transition: font-size 0.25s ease-in-out;
             }
         }
         #content {
@@ -282,10 +274,7 @@
             }
         }
         #footer {
-            font-size: large;
-            align-items: center;
-            justify-items: center;
-            height: 10vh;
+            @include footerProperty ();
             #footerdiv-one {
                 margin-left: 5vw;
                 a {
@@ -311,6 +300,8 @@
             justify-items: center;
             width: 100%;
             position: fixed;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTaqkheI1eHco59pIjVVJ_ScUJ08H9L6hf4-w&usqp=CAU);
+
           
             h3 {
                 display: none;

@@ -89,22 +89,7 @@
 }
 
 #container #header {
-  display: -ms-grid;
-  display: grid;
   display: none;
-  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  width: 100%;
-  height: 20vh;
-  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTaqkheI1eHco59pIjVVJ_ScUJ08H9L6hf4-w&usqp=CAU);
-}
-
-#container #header h3 {
-  font-size: larger;
-  text-align: center;
-  position: relative;
-  font-weight: bolder;
-  font-family: 'Source Serif Pro', serif;
 }
 
 #container #header h3 #pizza-logo {
@@ -115,15 +100,6 @@
 
 #container #header #pizza-logo-two {
   display: none;
-}
-
-#container #header a {
-  color: black;
-  font-weight: bolder;
-  font-size: smaller;
-  -webkit-transition: font-size 0.25s ease-in-out;
-  transition: font-size 0.25s ease-in-out;
-  text-decoration: none;
 }
 
 #container #content {
@@ -239,6 +215,7 @@
   #container #header {
     height: 25vh;
     position: fixed;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTaqkheI1eHco59pIjVVJ_ScUJ08H9L6hf4-w&usqp=CAU);
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (minmax(40px, 1fr))[auto-fit];
@@ -249,9 +226,14 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 100%;
   }
   #container #header h3 {
     font-size: x-large;
+    text-align: center;
+    position: relative;
+    font-weight: bolder;
+    font-family: 'Source Serif Pro', serif;
   }
   #container #header h3 #pizza-logo {
     width: 27%;
@@ -262,6 +244,9 @@
     color: darkred;
     padding: 10px;
     font-size: x-large;
+    font-weight: bolder;
+    -webkit-transition: font-size 0.25s ease-in-out;
+    transition: font-size 0.25s ease-in-out;
   }
   #container #content {
     min-height: 300vh;
@@ -339,6 +324,8 @@
             align-items: center;
     justify-items: center;
     width: 100%;
+    position: fixed;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTaqkheI1eHco59pIjVVJ_ScUJ08H9L6hf4-w&usqp=CAU);
   }
   #container #header h3 {
     display: none;
