@@ -292,10 +292,9 @@
   }
   #container #header a {
     text-decoration: none;
-    background-color: darkred;
-    color: white;
+    color: darkred;
     padding: 10px;
-    font-size: medium;
+    font-size: x-large;
   }
   #container #content {
     margin-top: 21vh;
@@ -363,6 +362,8 @@
             align-items: center;
     justify-items: center;
     width: 100%;
+    position: fixed;
+    z-index: 2;
   }
   #container #header h3 {
     display: none;
@@ -393,6 +394,7 @@
     display: grid;
     width: 99%;
     min-height: 80vh;
+    margin-top: 12vh;
   }
   #container #content #content-1, #container #content #content-2, #container #content #content-3, #container #content #content-4 {
     display: none;

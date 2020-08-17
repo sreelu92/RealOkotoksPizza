@@ -196,10 +196,9 @@
   }
   #container #header a {
     text-decoration: none;
-    background-color: darkred;
-    color: white;
+    color: darkred;
     padding: 10px;
-    font-size: medium;
+    font-size: x-large;
   }
   #container #content {
     min-height: 80vh;

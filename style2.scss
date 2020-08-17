@@ -226,10 +226,9 @@
             align-items: center;
             a {
                 text-decoration: none;
-                background-color: $font-color5;
-                color: $font-color6;
+                color: $font-color5;
                 padding: 10px;
-                font-size: medium;
+                font-size: x-large;
             }
         }
         #content {
@@ -311,6 +310,7 @@
             align-items: center;
             justify-items: center;
             width: 100%;
+            position: fixed;
           
             h3 {
                 display: none;
@@ -348,6 +348,7 @@
             margin-left: 5%;
             align-items: center;
             text-align: center;
+            margin-top: 13vh;
             #heading {
                 margin-left: 10vw;
                 margin-right: 10vw;

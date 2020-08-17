@@ -402,10 +402,9 @@
   }
   #container #header a {
     text-decoration: none;
-    background-color: darkred;
-    color: white;
+    color: darkred;
     padding: 10px;
-    font-size: medium;
+    font-size: x-large;
   }
   #container #content {
     display: -ms-grid;
@@ -487,6 +486,7 @@
             align-items: center;
     justify-items: center;
     width: 100%;
+    position: fixed;
   }
   #container #header h3 {
     display: none;
@@ -520,6 +520,7 @@
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
+    margin-top: 13vh;
   }
   #container #content #heading {
     margin-left: 10vw;
