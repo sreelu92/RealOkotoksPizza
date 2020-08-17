@@ -12,9 +12,9 @@
 }
 
 #container #mobile-header {
-  position: fixed;
   display: -ms-grid;
   display: grid;
+  position: fixed;
   justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;

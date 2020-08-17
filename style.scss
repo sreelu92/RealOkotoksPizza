@@ -9,13 +9,7 @@
     row-gap: 5vh;
     background-image: url(https://www.lefthudson.com/wp-content/uploads/2019/11/white-background-wallpaper-awesome-white-wallpapers-in-hd-barbaras-hd-wallpapers-ideas-of-white-background-wallpaper.jpg);
     #mobile-header {
-        position: fixed;
-        display: grid;
-        justify-items: center;
-        align-items: center;
-        grid-template-columns: 2fr 4fr 2fr;
-        min-height: 19vh;
-        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTaqkheI1eHco59pIjVVJ_ScUJ08H9L6hf4-w&usqp=CAU);
+        @include mobileheaderStyle();
         #mobile-logo {
             img {
                 width: 70%;
@@ -56,15 +50,8 @@
                 }
             }
             #mobile-header-menu {
-                transition: all 0.5s ease-in-out;
-                position: absolute;
-                width: 100%;
-                display: grid;
-                top:-19vh;
-                opacity: 0;
-                left: 30vw;
-                min-height: 19vh;
-                background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTaqkheI1eHco59pIjVVJ_ScUJ08H9L6hf4-w&usqp=CAU);
+                @include mobileheadermenuStyle();
+
                 a {
                     color:$font-color1;
                     text-decoration: none;

@@ -22,3 +22,36 @@
     justify-items: center;
     height: 10vh;
 }
+
+@mixin headerStyle () {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(90px,1fr));
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    position: fixed;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTaqkheI1eHco59pIjVVJ_ScUJ08H9L6hf4-w&usqp=CAU);
+
+}
+@mixin mobileheaderStyle () {
+    display: grid;
+    position: fixed;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 2fr 4fr 2fr;
+    min-height: 19vh;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTaqkheI1eHco59pIjVVJ_ScUJ08H9L6hf4-w&usqp=CAU);
+    
+}
+
+@mixin mobileheadermenuStyle() {
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    width: 100%;
+    display: grid;
+    top:-19vh;
+    opacity: 0;
+    left: 30vw;
+    min-height: 19vh;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTaqkheI1eHco59pIjVVJ_ScUJ08H9L6hf4-w&usqp=CAU);
+}
