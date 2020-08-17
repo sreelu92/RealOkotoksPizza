@@ -162,6 +162,9 @@
         background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTaqkheI1eHco59pIjVVJ_ScUJ08H9L6hf4-w&usqp=CAU);
         display: grid;
         grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+        #mob-atag2 {
+            display: none;
+        } 
     }
     @media only screen and(min-width:600px)
     { 
@@ -259,6 +262,12 @@
                     img {
                         width: 8%;
                     }
+                }
+                #mob-atag1 {
+                    display: none;
+                }
+                #mob-atag2 {
+                    display:inline;
                 }
                 
             }
@@ -370,6 +379,12 @@
                             height: 32px;
                         }
                     }
+                }
+                #mob-atag1 {
+                    display: none;
+                }
+                #mob-atag2 {
+                    display:inline;
                 }
             }
             #footerh5-two {

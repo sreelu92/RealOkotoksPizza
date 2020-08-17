@@ -242,6 +242,10 @@
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
+#container #footer #mob-atag2 {
+  display: none;
+}
+
 @media only screen and (min-width: 600px) {
   #container #mobile-header {
     display: none;
@@ -331,6 +335,12 @@
   }
   #container #footer #footerdiv-one a img {
     width: 8%;
+  }
+  #container #footer #footerdiv-one #mob-atag1 {
+    display: none;
+  }
+  #container #footer #footerdiv-one #mob-atag2 {
+    display: inline;
   }
 }
 
@@ -520,6 +530,12 @@
   #container #footer #footerdiv-one a img:hover {
     width: 32px;
     height: 32px;
+  }
+  #container #footer #footerdiv-one #mob-atag1 {
+    display: none;
+  }
+  #container #footer #footerdiv-one #mob-atag2 {
+    display: inline;
   }
   #container #footer #footerh5-two {
     margin-left: 10vw;
