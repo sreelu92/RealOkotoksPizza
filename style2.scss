@@ -358,11 +358,13 @@
                 #content2-10,#content2-11,#content2-12,#content2-13,#content2-14,#content2-15,#content2-16,#content2-17,
                 #content2-18,#content2-19, #content2-20,#content2-21, #content2-22,#content2-23,#content2-24
                 {
+                    height: 416px;
                     .content-image {
                         transition: all 0.25s ease-in-out;
+                       
                         &:hover {
-                            width: 270px;
-                            height: 270px;
+                            width: 200px;
+                            height: 200px;
                         }
                     }
                     .content-ptag {
